@@ -90,7 +90,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/dpemotes
     ref: master
-    src: https://github.com/qbcore-remastered/dpemotes
+    src: https://github.com/TayMcKenzieNZ/dpemotes
 
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
