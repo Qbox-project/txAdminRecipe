@@ -32,20 +32,6 @@ tasks:
     dest: ./resources/[cfx-default]
 
   - action: download_file
-    path: ./tmp/files/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/download/v2.5.1/oxmysql.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/files/oxmysql.zip
-
-  - action: download_file
-    path: ./tmp/files/ox_lib.zip
-    url: https://github.com/overextended/ox_lib/releases/download/v2.11.1/ox_lib.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/files/ox_lib.zip
-
-  - action: download_file
     path: ./tmp/menuv.zip
     url: https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
   - action: unzip
@@ -447,6 +433,28 @@ tasks:
     dest: ./resources/[qb]/qb-loading
     ref: main
     src: https://github.com/qbcore-remastered/qb-loading
+    
+  - action: download_file
+    path: ./tmp/ox_lib.zip
+    url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
+  - action: unzip
+    dest: ./resources/[ox]/ox_lib
+    src: ./tmp/ox.zip
+    
+  - action: download_file
+    path: ./tmp/ox_target.zip
+    url: https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
+  - action: unzip
+    dest: ./resources/[ox]/ox_target
+    src: ./tmp/ox_target.zip
+    
+  - action: download_file
+    path: ./tmp/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+  - action: unzip
+    dest: ./resources/[ox]/oxmysql
+    src: ./tmp/oxmysql.zip
+
 
   # Clean up
   - action: remove_path
