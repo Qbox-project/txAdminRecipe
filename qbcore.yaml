@@ -434,7 +434,7 @@ tasks:
     url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
     dest: ./resources/[ox]/ox_lib
-    src: ./tmp/ox.zip
+    src: ./tmp/ox_lib.zip
     
   - action: download_file
     path: ./tmp/ox_target.zip
