@@ -455,7 +455,6 @@ tasks:
     dest: ./resources/[ox]/oxmysql
     src: ./tmp/oxmysql.zip
 
-
   # Clean up
   - action: remove_path
     path: ./tmp
