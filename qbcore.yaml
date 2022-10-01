@@ -428,26 +428,24 @@ tasks:
     dest: ./resources/[qb]/qb-loading
     ref: main
     src: https://github.com/qbcore-remastered/qb-loading
-    
+
   - action: download_file
     path: ./tmp/ox_lib.zip
     url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
-    dest: ./resources/[ox]/ox_lib
-    src: ./tmp/ox.zip
-    
-  - action: download_file
-    path: ./tmp/ox_target.zip
-    url: https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
-  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_lib.zip
+
+  - action: download_github
     dest: ./resources/[ox]/ox_target
-    src: ./tmp/ox_target.zip
-    
+    ref: main
+    src: https://github.com/overextended/ox_target
+
   - action: download_file
     path: ./tmp/oxmysql.zip
     url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
-    dest: ./resources/[ox]/oxmysql
+    dest: ./resources/[ox]
     src: ./tmp/oxmysql.zip
 
   # Clean up
