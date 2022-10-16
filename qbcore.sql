@@ -355,3 +355,13 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('cartel', 0, 'gang'),
 ('families', 0, 'gang'),
 ('triads', 0, 'gang');
+
+CREATE TABLE IF NOT EXISTS `ox_doorlock` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `data` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
+	(1, 'vangelico_jewellery', '{"maxDistance":2,"groups":{"police":0},"doors":[{"model":1425919976,"coords":{"x":-631.9553833007813,"y":-236.33326721191407,"z":38.2065315246582},"heading":306},{"model":9467943,"coords":{"x":-630.426513671875,"y":-238.4375457763672,"z":38.2065315246582},"heading":306}],"state":1,"coords":{"x":-631.19091796875,"y":-237.38540649414063,"z":38.2065315246582},"hideUi":true}');

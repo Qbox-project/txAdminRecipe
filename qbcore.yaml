@@ -385,11 +385,6 @@ tasks:
     src: https://github.com/qbcore-remastered/qb-hotdogjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-doorlock
-    ref: main
-    src: https://github.com/qbcore-remastered/qb-doorlock
-
-  - action: download_github
     dest: ./resources/[qb]/qb-garbagejob
     ref: main
     src: https://github.com/qbcore-remastered/qb-garbagejob
@@ -447,6 +442,13 @@ tasks:
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/oxmysql.zip
+
+  - action: download_file
+    path: ./tmp/ox_doorlock.zip
+    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_doorlock.zip
 
   # Clean up
   - action: remove_path
