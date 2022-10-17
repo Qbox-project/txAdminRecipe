@@ -1,6 +1,6 @@
 $engine: 3
 $onesync: on
-name: QBCore Remastered
+name: Qbox Project
 version: 1.0.0
 author: The Community
 description: A FiveM core with a load of bloat.
@@ -8,7 +8,7 @@ description: A FiveM core with a load of bloat.
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/qbcore-remastered/txAdminRecipe
+    src: https://github.com/qbox-project/txAdminRecipe
     ref: main
     dest: ./tmp/qbcore
 
@@ -31,22 +31,15 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx-default]
 
-  - action: download_file
-    path: ./tmp/menuv.zip
-    url: https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
-  - action: unzip
-    dest: ./resources/[standalone]/menuv
-    src: ./tmp/menuv.zip
-
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
-    src: https://github.com/qbcore-remastered/bob74_ipl
+    src: https://github.com/qbox-project/bob74_ipl
 
   - action: download_github
     dest: ./resources/[standalone]/safecracker
     ref: main
-    src: https://github.com/qbcore-remastered/safecracker
+    src: https://github.com/qbox-project/safecracker
 
   - action: download_github
     dest: ./resources/[standalone]/screenshot-basic
@@ -56,22 +49,22 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/progressbar
     ref: main
-    src: https://github.com/qbcore-remastered/progressbar
+    src: https://github.com/qbox-project/progressbar
 
   - action: download_github
     dest: ./resources/[standalone]/interact-sound
     ref: master
-    src: https://github.com/qbcore-remastered/interact-sound
+    src: https://github.com/qbox-project/interact-sound
 
   - action: download_github
     dest: ./resources/[standalone]/mhacking
     ref: main
-    src: https://github.com/qbcore-remastered/mhacking
+    src: https://github.com/qbox-project/mhacking
 
   - action: download_github
     dest: ./resources/[standalone]/connectqueue
     ref: master
-    src: https://github.com/qbcore-remastered/connectqueue
+    src: https://github.com/qbox-project/connectqueue
 
   - action: download_github
     dest: ./resources/[standalone]/dpemotes
@@ -81,12 +74,17 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
     ref: master
-    src: https://github.com/qbcore-remastered/PolyZone
+    src: https://github.com/qbox-project/PolyZone
 
   - action: download_github
     dest: ./resources/[standalone]/LegacyFuel
     ref: master
-    src: https://github.com/qbcore-remastered/LegacyFuel
+    src: https://github.com/qbox-project/LegacyFuel
+
+  - action: download_github
+    dest: ./resources/[standalone]/ultra-voltlab
+    ref: main
+    src: https://github.com/ultrahacx/ultra-voltlab
 
     # VOICE
   - action: download_github
@@ -97,28 +95,28 @@ tasks:
   - action: download_github
     dest: ./resources/[voice]/qb-radio
     ref: main
-    src: https://github.com/qbcore-remastered/qb-radio
+    src: https://github.com/qbox-project/qb-radio
 
   # Downloading QBCore resources
   - action: download_github
     dest: ./resources/[qb]/qb-core
     ref: main
-    src: https://github.com/qbcore-remastered/qb-core
+    src: https://github.com/qbox-project/qb-core
 
   - action: download_github
     dest: ./resources/[qb]/qb-scoreboard
     ref: main
-    src: https://github.com/qbcore-remastered/qb-scoreboard
+    src: https://github.com/qbox-project/qb-scoreboard
 
   - action: download_github
     dest: ./resources/[qb]/qb-adminmenu
     ref: main
-    src: https://github.com/qbcore-remastered/qb-adminmenu
+    src: https://github.com/qbox-project/qb-adminmenu
 
   - action: download_github
     dest: ./resources/[qb]/qb-multicharacter
     ref: main
-    src: https://github.com/qbcore-remastered/qb-multicharacter
+    src: https://github.com/qbox-project/qb-multicharacter
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -126,77 +124,77 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-customs
     ref: main
-    src: https://github.com/qbcore-remastered/qb-customs
+    src: https://github.com/qbox-project/qb-customs
 
   - action: download_github
     dest: ./resources/[qb]/qb-vehiclesales
     ref: main
-    src: https://github.com/qbcore-remastered/qb-vehiclesales
+    src: https://github.com/qbox-project/qb-vehiclesales
 
   - action: download_github
     dest: ./resources/[qb]/qb-vehicleshop
     ref: main
-    src: https://github.com/qbcore-remastered/qb-vehicleshop
+    src: https://github.com/qbox-project/qb-vehicleshop
 
   - action: download_github
     dest: ./resources/[qb]/qb-houserobbery
     ref: main
-    src: https://github.com/qbcore-remastered/qb-houserobbery
+    src: https://github.com/qbox-project/qb-houserobbery
 
   - action: download_github
     dest: ./resources/[qb]/qb-prison
     ref: main
-    src: https://github.com/qbcore-remastered/qb-prison
+    src: https://github.com/qbox-project/qb-prison
 
   - action: download_github
     dest: ./resources/[qb]/qb-atms
     ref: main
-    src: https://github.com/qbcore-remastered/qb-atms
+    src: https://github.com/qbox-project/qb-atms
 
   - action: download_github
     dest: ./resources/[qb]/qb-hud
     ref: main
-    src: https://github.com/qbcore-remastered/qb-hud
+    src: https://github.com/qbox-project/qb-hud
 
   - action: download_github
     dest: ./resources/[qb]/qb-management
     ref: main
-    src: https://github.com/qbcore-remastered/qb-management
+    src: https://github.com/qbox-project/qb-management
 
   - action: download_github
     dest: ./resources/[qb]/qb-weed
     ref: main
-    src: https://github.com/qbcore-remastered/qb-weed
+    src: https://github.com/qbox-project/qb-weed
 
   - action: download_github
     dest: ./resources/[qb]/qb-lapraces
     ref: main
-    src: https://github.com/qbcore-remastered/qb-lapraces
+    src: https://github.com/qbox-project/qb-lapraces
 
   - action: download_github
     dest: ./resources/[qb]/qb-inventory
     ref: main
-    src: https://github.com/qbcore-remastered/qb-inventory
+    src: https://github.com/qbox-project/qb-inventory
 
   - action: download_github
     dest: ./resources/[qb]/qb-houses
     ref: main
-    src: https://github.com/qbcore-remastered/qb-houses
+    src: https://github.com/qbox-project/qb-houses
 
   - action: download_github
     dest: ./resources/[qb]/qb-garages
     ref: main
-    src: https://github.com/qbcore-remastered/qb-garages
+    src: https://github.com/qbox-project/qb-garages
 
   - action: download_github
     dest: ./resources/[qb]/qb-ambulancejob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-ambulancejob
+    src: https://github.com/qbox-project/qb-ambulancejob
 
   - action: download_github
     dest: ./resources/[qb]/qb-vehiclefailure
     ref: main
-    src: https://github.com/qbcore-remastered/qb-vehiclefailure
+    src: https://github.com/qbox-project/qb-vehiclefailure
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -204,142 +202,142 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-radialmenu
     ref: main
-    src: https://github.com/qbcore-remastered/qb-radialmenu
+    src: https://github.com/qbox-project/qb-radialmenu
 
   - action: download_github
     dest: ./resources/[qb]/qb-crypto
     ref: main
-    src: https://github.com/qbcore-remastered/qb-crypto
+    src: https://github.com/qbox-project/qb-crypto
 
   - action: download_github
     dest: ./resources/[qb]/qb-weathersync
     ref: main
-    src: https://github.com/qbcore-remastered/qb-weathersync
+    src: https://github.com/qbox-project/qb-weathersync
 
   - action: download_github
     dest: ./resources/[qb]/qb-policejob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-policejob
+    src: https://github.com/qbox-project/qb-policejob
 
   - action: download_github
     dest: ./resources/[qb]/qb-traphouse
     ref: main
-    src: https://github.com/qbcore-remastered/qb-traphouse
+    src: https://github.com/qbox-project/qb-traphouse
 
   - action: download_github
     dest: ./resources/[qb]/qb-apartments
     ref: main
-    src: https://github.com/qbcore-remastered/qb-apartments
+    src: https://github.com/qbox-project/qb-apartments
 
   - action: download_github
     dest: ./resources/[qb]/qb-vehiclekeys
     ref: main
-    src: https://github.com/qbcore-remastered/qb-vehiclekeys
+    src: https://github.com/qbox-project/qb-vehiclekeys
 
   - action: download_github
     dest: ./resources/[qb]/qb-mechanicjob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-mechanicjob
+    src: https://github.com/qbox-project/qb-mechanicjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-phone
     ref: main
-    src: https://github.com/qbcore-remastered/qb-phone
+    src: https://github.com/qbox-project/qb-phone
 
   - action: download_github
     dest: ./resources/[qb]/qb-vineyard
     ref: main
-    src: https://github.com/qbcore-remastered/qb-vineyard
+    src: https://github.com/qbox-project/qb-vineyard
 
   - action: download_github
     dest: ./resources/[qb]/qb-weapons
     ref: main
-    src: https://github.com/qbcore-remastered/qb-weapons
+    src: https://github.com/qbox-project/qb-weapons
 
   - action: download_github
     dest: ./resources/[qb]/qb-scrapyard
     ref: main
-    src: https://github.com/qbcore-remastered/qb-scrapyard
+    src: https://github.com/qbox-project/qb-scrapyard
 
   - action: download_github
     dest: ./resources/[qb]/qb-tunerchip
     ref: main
-    src: https://github.com/qbcore-remastered/qb-tunerchip
+    src: https://github.com/qbox-project/qb-tunerchip
 
   - action: download_github
     dest: ./resources/[qb]/qb-towjob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-towjob
+    src: https://github.com/qbox-project/qb-towjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-streetraces
     ref: main
-    src: https://github.com/qbcore-remastered/qb-streetraces
+    src: https://github.com/qbox-project/qb-streetraces
 
   - action: download_github
     dest: ./resources/[qb]/qb-storerobbery
     ref: main
-    src: https://github.com/qbcore-remastered/qb-storerobbery
+    src: https://github.com/qbox-project/qb-storerobbery
 
   - action: download_github
     dest: ./resources/[qb]/qb-spawn
     ref: main
-    src: https://github.com/qbcore-remastered/qb-spawn
+    src: https://github.com/qbox-project/qb-spawn
 
   - action: download_github
     dest: ./resources/[qb]/qb-skillbar
     ref: main
-    src: https://github.com/qbcore-remastered/qb-skillbar
+    src: https://github.com/qbox-project/qb-skillbar
 
   - action: download_github
     dest: ./resources/[qb]/qb-smallresources
     ref: main
-    src: https://github.com/qbcore-remastered/qb-smallresources
+    src: https://github.com/qbox-project/qb-smallresources
 
   - action: download_github
     dest: ./resources/[qb]/qb-recyclejob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-recyclejob
+    src: https://github.com/qbox-project/qb-recyclejob
 
   - action: download_github
     dest: ./resources/[qb]/qb-diving
     ref: main
-    src: https://github.com/qbcore-remastered/qb-diving
+    src: https://github.com/qbox-project/qb-diving
 
   - action: download_github
     dest: ./resources/[qb]/qb-cityhall
     ref: main
-    src: https://github.com/qbcore-remastered/qb-cityhall
+    src: https://github.com/qbox-project/qb-cityhall
 
   - action: download_github
     dest: ./resources/[qb]/qb-truckrobbery
     ref: main
-    src: https://github.com/qbcore-remastered/qb-truckrobbery
+    src: https://github.com/qbox-project/qb-truckrobbery
 
   - action: download_github
     dest: ./resources/[qb]/qb-pawnshop
     ref: main
-    src: https://github.com/qbcore-remastered/qb-pawnshop
+    src: https://github.com/qbox-project/qb-pawnshop
 
   - action: download_github
     dest: ./resources/[qb]/qb-taxijob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-taxijob
+    src: https://github.com/qbox-project/qb-taxijob
 
   - action: download_github
     dest: ./resources/[qb]/qb-busjob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-busjob
+    src: https://github.com/qbox-project/qb-busjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-newsjob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-newsjob
+    src: https://github.com/qbox-project/qb-newsjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-jewelery
     ref: main
-    src: https://github.com/qbcore-remastered/qb-jewelery
+    src: https://github.com/qbox-project/qb-jewelery
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -347,82 +345,82 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-bankrobbery
     ref: main
-    src: https://github.com/qbcore-remastered/qb-bankrobbery
+    src: https://github.com/qbox-project/qb-bankrobbery
 
   - action: download_github
     dest: ./resources/[qb]/qb-truckerjob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-truckerjob
+    src: https://github.com/qbox-project/qb-truckerjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-keyminigame
     ref: main
-    src: https://github.com/qbcore-remastered/qb-keyminigame
+    src: https://github.com/qbox-project/qb-keyminigame
 
   - action: download_github
     dest: ./resources/[qb]/qb-fitbit
     ref: main
-    src: https://github.com/qbcore-remastered/qb-fitbit
+    src: https://github.com/qbox-project/qb-fitbit
 
   - action: download_github
     dest: ./resources/[qb]/qb-commandbinding
     ref: main
-    src: https://github.com/qbcore-remastered/qb-commandbinding
+    src: https://github.com/qbox-project/qb-commandbinding
 
   - action: download_github
     dest: ./resources/[qb]/qb-banking
     ref: main
-    src: https://github.com/qbcore-remastered/qb-banking
+    src: https://github.com/qbox-project/qb-banking
 
   - action: download_github
     dest: ./resources/[qb]/qb-clothing
     ref: main
-    src: https://github.com/qbcore-remastered/qb-clothing
+    src: https://github.com/qbox-project/qb-clothing
 
   - action: download_github
     dest: ./resources/[qb]/qb-hotdogjob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-hotdogjob
+    src: https://github.com/qbox-project/qb-hotdogjob
 
   - action: download_github
     dest: ./resources/[qb]/qb-garbagejob
     ref: main
-    src: https://github.com/qbcore-remastered/qb-garbagejob
+    src: https://github.com/qbox-project/qb-garbagejob
 
   - action: download_github
     dest: ./resources/[qb]/qb-drugs
     ref: main
-    src: https://github.com/qbcore-remastered/qb-drugs
+    src: https://github.com/qbox-project/qb-drugs
 
   - action: download_github
     dest: ./resources/[qb]/qb-shops
     ref: main
-    src: https://github.com/qbcore-remastered/qb-shops
+    src: https://github.com/qbox-project/qb-shops
 
   - action: download_github
     dest: ./resources/[qb]/qb-lockpick
     ref: main
-    src: https://github.com/qbcore-remastered/qb-lockpick
+    src: https://github.com/qbox-project/qb-lockpick
 
   - action: download_github
     dest: ./resources/[qb]/qb-interior
     ref: main
-    src: https://github.com/qbcore-remastered/qb-interior
+    src: https://github.com/qbox-project/qb-interior
 
   - action: download_github
     dest: ./resources/[qb]/qb-menu
     ref: main
-    src: https://github.com/qbcore-remastered/qb-menu
+    src: https://github.com/qbox-project/qb-menu
 
   - action: download_github
     dest: ./resources/[qb]/qb-input
     ref: main
-    src: https://github.com/qbcore-remastered/qb-input
+    src: https://github.com/qbox-project/qb-input
 
   - action: download_github
     dest: ./resources/[qb]/qb-loading
     ref: main
-    src: https://github.com/qbcore-remastered/qb-loading
+    src: https://github.com/qbox-project/qb-loading
 
   - action: download_file
     path: ./tmp/ox_lib.zip
