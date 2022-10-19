@@ -408,16 +408,6 @@ tasks:
     src: https://github.com/qbox-project/qb-interior
 
   - action: download_github
-    dest: ./resources/[qb]/qb-menu
-    ref: main
-    src: https://github.com/qbox-project/qb-menu
-
-  - action: download_github
-    dest: ./resources/[qb]/qb-input
-    ref: main
-    src: https://github.com/qbox-project/qb-input
-
-  - action: download_github
     dest: ./resources/[qb]/qb-loading
     ref: main
     src: https://github.com/qbox-project/qb-loading
