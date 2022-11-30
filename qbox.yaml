@@ -71,9 +71,9 @@ tasks:
     src: https://github.com/qbox-project/connectqueue
 
   - action: download_github
-    dest: ./resources/[standalone]/dpemotes
-    ref: master
-    src: https://github.com/TayMcKenzieNZ/dpemotes
+    dest: ./resources/[standalone]/scully_emotemenu
+    ref: main
+    src: https://github.com/Scullyy/scully_emotemenu
 
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
