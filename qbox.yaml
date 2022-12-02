@@ -126,11 +126,6 @@ tasks:
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qb]/qb-customs
-    ref: main
-    src: https://github.com/qbox-project/qb-customs
-
-  - action: download_github
     dest: ./resources/[qb]/qb-vehiclesales
     ref: main
     src: https://github.com/qbox-project/qb-vehiclesales
