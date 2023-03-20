@@ -97,304 +97,304 @@ tasks:
     src: https://github.com/AvarianKnight/pma-voice
 
   - action: download_github
-    dest: ./resources/[voice]/qb-radio
+    dest: ./resources/[voice]/qbx-radio
     ref: main
-    src: https://github.com/qbox-project/qb-radio
+    src: https://github.com/qbox-project/qbx-radio
 
   # Downloading Qbox resources
   - action: download_github
-    dest: ./resources/[qb]/qb-core
+    dest: ./resources/[qbx]/qbx-core
     ref: main
-    src: https://github.com/qbox-project/qb-core
+    src: https://github.com/qbox-project/qbx-core
 
   - action: download_github
-    dest: ./resources/[qb]/qb-scoreboard
+    dest: ./resources/[qbx]/qbx-scoreboard
     ref: main
-    src: https://github.com/qbox-project/qb-scoreboard
+    src: https://github.com/qbox-project/qbx-scoreboard
 
   - action: download_github
-    dest: ./resources/[qb]/qb-adminmenu
+    dest: ./resources/[qbx]/qbx-adminmenu
     ref: main
-    src: https://github.com/qbox-project/qb-adminmenu
+    src: https://github.com/qbox-project/qbx-adminmenu
 
   - action: download_github
-    dest: ./resources/[qb]/qb-multicharacter
+    dest: ./resources/[qbx]/qbx-multicharacter
     ref: main
-    src: https://github.com/qbox-project/qb-multicharacter
+    src: https://github.com/qbox-project/qbx-multicharacter
 
   - action: waste_time # prevent github throttling
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qb]/qb-vehiclesales
+    dest: ./resources/[qbx]/qbx-vehiclesales
     ref: main
-    src: https://github.com/qbox-project/qb-vehiclesales
+    src: https://github.com/qbox-project/qbx-vehiclesales
 
   - action: download_github
-    dest: ./resources/[qb]/qb-vehicleshop
+    dest: ./resources/[qbx]/qbx-vehicleshop
     ref: main
-    src: https://github.com/qbox-project/qb-vehicleshop
+    src: https://github.com/qbox-project/qbx-vehicleshop
 
   - action: download_github
-    dest: ./resources/[qb]/qb-houserobbery
+    dest: ./resources/[qbx]/qbx-houserobbery
     ref: main
-    src: https://github.com/qbox-project/qb-houserobbery
+    src: https://github.com/qbox-project/qbx-houserobbery
 
   - action: download_github
-    dest: ./resources/[qb]/qb-prison
+    dest: ./resources/[qbx]/qbx-prison
     ref: main
-    src: https://github.com/qbox-project/qb-prison
+    src: https://github.com/qbox-project/qbx-prison
 
   - action: download_github
-    dest: ./resources/[qb]/qb-atms
+    dest: ./resources/[qbx]/qbx-atms
     ref: main
-    src: https://github.com/qbox-project/qb-atms
+    src: https://github.com/qbox-project/qbx-atms
 
   - action: download_github
-    dest: ./resources/[qb]/qb-hud
+    dest: ./resources/[qbx]/qbx-hud
     ref: main
-    src: https://github.com/qbox-project/qb-hud
+    src: https://github.com/qbox-project/qbx-hud
 
   - action: download_github
-    dest: ./resources/[qb]/qb-management
+    dest: ./resources/[qbx]/qbx-management
     ref: main
-    src: https://github.com/qbox-project/qb-management
+    src: https://github.com/qbox-project/qbx-management
 
   - action: download_github
-    dest: ./resources/[qb]/qb-weed
+    dest: ./resources/[qbx]/qbx-weed
     ref: main
-    src: https://github.com/qbox-project/qb-weed
+    src: https://github.com/qbox-project/qbx-weed
 
   - action: download_github
-    dest: ./resources/[qb]/qb-lapraces
+    dest: ./resources/[qbx]/qbx-lapraces
     ref: main
-    src: https://github.com/qbox-project/qb-lapraces
+    src: https://github.com/qbox-project/qbx-lapraces
 
   - action: download_github
-    dest: ./resources/[qb]/qb-houses
+    dest: ./resources/[qbx]/qbx-houses
     ref: main
-    src: https://github.com/qbox-project/qb-houses
+    src: https://github.com/qbox-project/qbx-houses
 
   - action: download_github
-    dest: ./resources/[qb]/qb-garages
+    dest: ./resources/[qbx]/qbx-garages
     ref: main
-    src: https://github.com/qbox-project/qb-garages
+    src: https://github.com/qbox-project/qbx-garages
 
   - action: download_github
-    dest: ./resources/[qb]/qb-ambulancejob
+    dest: ./resources/[qbx]/qbx-ambulancejob
     ref: main
-    src: https://github.com/qbox-project/qb-ambulancejob
+    src: https://github.com/qbox-project/qbx-ambulancejob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-vehiclefailure
+    dest: ./resources/[qbx]/qbx-vehiclefailure
     ref: main
-    src: https://github.com/qbox-project/qb-vehiclefailure
+    src: https://github.com/qbox-project/qbx-vehiclefailure
 
   - action: waste_time # prevent github throttling
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qb]/qb-radialmenu
+    dest: ./resources/[qbx]/qbx-radialmenu
     ref: main
-    src: https://github.com/qbox-project/qb-radialmenu
+    src: https://github.com/qbox-project/qbx-radialmenu
 
   - action: download_github
-    dest: ./resources/[qb]/qb-crypto
+    dest: ./resources/[qbx]/qbx-crypto
     ref: main
-    src: https://github.com/qbox-project/qb-crypto
+    src: https://github.com/qbox-project/qbx-crypto
 
   - action: download_github
-    dest: ./resources/[qb]/qb-weathersync
+    dest: ./resources/[qbx]/qbx-weathersync
     ref: main
-    src: https://github.com/qbox-project/qb-weathersync
+    src: https://github.com/qbox-project/qbx-weathersync
 
   - action: download_github
-    dest: ./resources/[qb]/qb-policejob
+    dest: ./resources/[qbx]/qbx-policejob
     ref: main
-    src: https://github.com/qbox-project/qb-policejob
+    src: https://github.com/qbox-project/qbx-policejob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-traphouse
+    dest: ./resources/[qbx]/qbx-traphouse
     ref: main
-    src: https://github.com/qbox-project/qb-traphouse
+    src: https://github.com/qbox-project/qbx-traphouse
 
   - action: download_github
-    dest: ./resources/[qb]/qb-apartments
+    dest: ./resources/[qbx]/qbx-apartments
     ref: main
-    src: https://github.com/qbox-project/qb-apartments
+    src: https://github.com/qbox-project/qbx-apartments
 
   - action: download_github
-    dest: ./resources/[qb]/qb-vehiclekeys
+    dest: ./resources/[qbx]/qbx-vehiclekeys
     ref: main
-    src: https://github.com/qbox-project/qb-vehiclekeys
+    src: https://github.com/qbox-project/qbx-vehiclekeys
 
   - action: download_github
-    dest: ./resources/[qb]/qb-mechanicjob
+    dest: ./resources/[qbx]/qbx-mechanicjob
     ref: main
-    src: https://github.com/qbox-project/qb-mechanicjob
+    src: https://github.com/qbox-project/qbx-mechanicjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-phone
+    dest: ./resources/[qbx]/qbx-phone
     ref: main
-    src: https://github.com/qbox-project/qb-phone
+    src: https://github.com/qbox-project/qbx-phone
 
   - action: download_github
-    dest: ./resources/[qb]/qb-vineyard
+    dest: ./resources/[qbx]/qbx-vineyard
     ref: main
-    src: https://github.com/qbox-project/qb-vineyard
+    src: https://github.com/qbox-project/qbx-vineyard
 
   - action: download_github
-    dest: ./resources/[qb]/qb-scrapyard
+    dest: ./resources/[qbx]/qbx-scrapyard
     ref: main
-    src: https://github.com/qbox-project/qb-scrapyard
+    src: https://github.com/qbox-project/qbx-scrapyard
 
   - action: download_github
-    dest: ./resources/[qb]/qb-tunerchip
+    dest: ./resources/[qbx]/qbx-tunerchip
     ref: main
-    src: https://github.com/qbox-project/qb-tunerchip
+    src: https://github.com/qbox-project/qbx-tunerchip
 
   - action: download_github
-    dest: ./resources/[qb]/qb-towjob
+    dest: ./resources/[qbx]/qbx-towjob
     ref: main
-    src: https://github.com/qbox-project/qb-towjob
+    src: https://github.com/qbox-project/qbx-towjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-streetraces
+    dest: ./resources/[qbx]/qbx-streetraces
     ref: main
-    src: https://github.com/qbox-project/qb-streetraces
+    src: https://github.com/qbox-project/qbx-streetraces
 
   - action: download_github
-    dest: ./resources/[qb]/qb-storerobbery
+    dest: ./resources/[qbx]/qbx-storerobbery
     ref: main
-    src: https://github.com/qbox-project/qb-storerobbery
+    src: https://github.com/qbox-project/qbx-storerobbery
 
   - action: download_github
-    dest: ./resources/[qb]/qb-spawn
+    dest: ./resources/[qbx]/qbx-spawn
     ref: main
-    src: https://github.com/qbox-project/qb-spawn
+    src: https://github.com/qbox-project/qbx-spawn
 
   - action: download_github
-    dest: ./resources/[qb]/qb-skillbar
+    dest: ./resources/[qbx]/qbx-skillbar
     ref: main
-    src: https://github.com/qbox-project/qb-skillbar
+    src: https://github.com/qbox-project/qbx-skillbar
 
   - action: download_github
-    dest: ./resources/[qb]/qb-smallresources
+    dest: ./resources/[qbx]/qbx-smallresources
     ref: main
-    src: https://github.com/qbox-project/qb-smallresources
+    src: https://github.com/qbox-project/qbx-smallresources
 
   - action: download_github
-    dest: ./resources/[qb]/qb-recyclejob
+    dest: ./resources/[qbx]/qbx-recyclejob
     ref: main
-    src: https://github.com/qbox-project/qb-recyclejob
+    src: https://github.com/qbox-project/qbx-recyclejob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-diving
+    dest: ./resources/[qbx]/qbx-diving
     ref: main
-    src: https://github.com/qbox-project/qb-diving
+    src: https://github.com/qbox-project/qbx-diving
 
   - action: download_github
-    dest: ./resources/[qb]/qb-cityhall
+    dest: ./resources/[qbx]/qbx-cityhall
     ref: main
-    src: https://github.com/qbox-project/qb-cityhall
+    src: https://github.com/qbox-project/qbx-cityhall
 
   - action: download_github
-    dest: ./resources/[qb]/qb-truckrobbery
+    dest: ./resources/[qbx]/qbx-truckrobbery
     ref: main
-    src: https://github.com/qbox-project/qb-truckrobbery
+    src: https://github.com/qbox-project/qbx-truckrobbery
 
   - action: download_github
-    dest: ./resources/[qb]/qb-pawnshop
+    dest: ./resources/[qbx]/qbx-pawnshop
     ref: main
-    src: https://github.com/qbox-project/qb-pawnshop
+    src: https://github.com/qbox-project/qbx-pawnshop
 
   - action: download_github
-    dest: ./resources/[qb]/qb-taxijob
+    dest: ./resources/[qbx]/qbx-taxijob
     ref: main
-    src: https://github.com/qbox-project/qb-taxijob
+    src: https://github.com/qbox-project/qbx-taxijob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-busjob
+    dest: ./resources/[qbx]/qbx-busjob
     ref: main
-    src: https://github.com/qbox-project/qb-busjob
+    src: https://github.com/qbox-project/qbx-busjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-newsjob
+    dest: ./resources/[qbx]/qbx-newsjob
     ref: main
-    src: https://github.com/qbox-project/qb-newsjob
+    src: https://github.com/qbox-project/qbx-newsjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-jewelery
+    dest: ./resources/[qbx]/qbx-jewelery
     ref: main
-    src: https://github.com/qbox-project/qb-jewelery
+    src: https://github.com/qbox-project/qbx-jewelery
 
   - action: waste_time # prevent github throttling
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qb]/qb-bankrobbery
+    dest: ./resources/[qbx]/qbx-bankrobbery
     ref: main
-    src: https://github.com/qbox-project/qb-bankrobbery
+    src: https://github.com/qbox-project/qbx-bankrobbery
 
   - action: download_github
-    dest: ./resources/[qb]/qb-truckerjob
+    dest: ./resources/[qbx]/qbx-truckerjob
     ref: main
-    src: https://github.com/qbox-project/qb-truckerjob
+    src: https://github.com/qbox-project/qbx-truckerjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-keyminigame
+    dest: ./resources/[qbx]/qbx-keyminigame
     ref: main
-    src: https://github.com/qbox-project/qb-keyminigame
+    src: https://github.com/qbox-project/qbx-keyminigame
 
   - action: download_github
-    dest: ./resources/[qb]/qb-fitbit
+    dest: ./resources/[qbx]/qbx-fitbit
     ref: main
-    src: https://github.com/qbox-project/qb-fitbit
+    src: https://github.com/qbox-project/qbx-fitbit
 
   - action: download_github
-    dest: ./resources/[qb]/qb-commandbinding
+    dest: ./resources/[qbx]/qbx-commandbinding
     ref: main
-    src: https://github.com/qbox-project/qb-commandbinding
+    src: https://github.com/qbox-project/qbx-commandbinding
 
   - action: download_github
-    dest: ./resources/[qb]/qb-banking
+    dest: ./resources/[qbx]/qbx-banking
     ref: main
-    src: https://github.com/qbox-project/qb-banking
+    src: https://github.com/qbox-project/qbx-banking
 
   - action: download_github
-    dest: ./resources/[qb]/qb-clothing
+    dest: ./resources/[qbx]/qbx-clothing
     ref: main
-    src: https://github.com/qbox-project/qb-clothing
+    src: https://github.com/qbox-project/qbx-clothing
 
   - action: download_github
-    dest: ./resources/[qb]/qb-hotdogjob
+    dest: ./resources/[qbx]/qbx-hotdogjob
     ref: main
-    src: https://github.com/qbox-project/qb-hotdogjob
+    src: https://github.com/qbox-project/qbx-hotdogjob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-garbagejob
+    dest: ./resources/[qbx]/qbx-garbagejob
     ref: main
-    src: https://github.com/qbox-project/qb-garbagejob
+    src: https://github.com/qbox-project/qbx-garbagejob
 
   - action: download_github
-    dest: ./resources/[qb]/qb-drugs
+    dest: ./resources/[qbx]/qbx-drugs
     ref: main
-    src: https://github.com/qbox-project/qb-drugs
+    src: https://github.com/qbox-project/qbx-drugs
 
   - action: download_github
-    dest: ./resources/[qb]/qb-lockpick
+    dest: ./resources/[qbx]/qbx-lockpick
     ref: main
-    src: https://github.com/qbox-project/qb-lockpick
+    src: https://github.com/qbox-project/qbx-lockpick
 
   - action: download_github
-    dest: ./resources/[qb]/qb-interior
+    dest: ./resources/[qbx]/qbx-interior
     ref: main
-    src: https://github.com/qbox-project/qb-interior
+    src: https://github.com/qbox-project/qbx-interior
 
   - action: download_github
-    dest: ./resources/[qb]/qb-loading
+    dest: ./resources/[qbx]/qbx-loading
     ref: main
-    src: https://github.com/qbox-project/qb-loading
+    src: https://github.com/qbox-project/qbx-loading
 
   - action: download_file
     path: ./tmp/ox_lib.zip
