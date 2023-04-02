@@ -90,6 +90,20 @@ tasks:
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
 
+  # - action: download_file
+  #   path: ./tmp/Renewed-Banking.zip
+  #   url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
+  # - action: unzip
+  #   dest: ./resources/[standalone]
+  #   src: ./tmp/Renewed-Banking.zip
+
+  - action: download_file
+    path: ./tmp/illenium-appearance.zip
+    url: https://github.com/iLLeniumStudios/illenium-appearance/releases/latest/download/illenium-appearance.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/illenium-appearance.zip
+
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
@@ -144,11 +158,6 @@ tasks:
     dest: ./resources/[qbx]/qbx-prison
     ref: main
     src: https://github.com/qbox-project/qbx-prison
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx-atms
-    ref: main
-    src: https://github.com/qbox-project/qbx-atms
 
   - action: download_github
     dest: ./resources/[qbx]/qbx-hud
@@ -355,11 +364,6 @@ tasks:
     dest: ./resources/[qbx]/qbx-commandbinding
     ref: main
     src: https://github.com/qbox-project/qbx-commandbinding
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx-banking
-    ref: main
-    src: https://github.com/qbox-project/qbx-banking
 
   - action: download_github
     dest: ./resources/[qbx]/qbx-clothing
