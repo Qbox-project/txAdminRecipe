@@ -81,11 +81,6 @@ tasks:
     src: https://github.com/qbox-project/PolyZone
 
   - action: download_github
-    dest: ./resources/[standalone]/LegacyFuel
-    ref: master
-    src: https://github.com/qbox-project/LegacyFuel
-
-  - action: download_github
     dest: ./resources/[standalone]/ultra-voltlab
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
@@ -395,6 +390,7 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx-loading
 
+  # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
     url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
@@ -427,6 +423,11 @@ tasks:
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
+
+  - action: download_github
+    dest: ./resources/[ox]/ox_fuel
+    ref: main
+    src: https://github.com/overextended/ox_fuel
 
   # Clean up
   - action: remove_path
