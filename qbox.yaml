@@ -80,12 +80,12 @@ tasks:
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
 
-  # - action: download_file
-  #   path: ./tmp/Renewed-Banking.zip
-  #   url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
-  # - action: unzip
-  #   dest: ./resources/[standalone]
-  #   src: ./tmp/Renewed-Banking.zip
+  - action: download_file
+    path: ./tmp/Renewed-Banking.zip
+    url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/Renewed-Banking.zip
 
   - action: download_file
     path: ./tmp/illenium-appearance.zip
