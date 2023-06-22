@@ -38,7 +38,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
-    src: https://github.com/qbox-project/bob74_ipl
+    src: https://github.com/Bob74/bob74_ipl
 
   - action: download_github
     dest: ./resources/[standalone]/safecracker
