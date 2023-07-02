@@ -356,11 +356,6 @@ tasks:
     src: https://github.com/qbox-project/qbx-commandbinding
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx-hotdogjob
-    ref: main
-    src: https://github.com/qbox-project/qbx-hotdogjob
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx-garbagejob
     ref: main
     src: https://github.com/qbox-project/qbx-garbagejob
