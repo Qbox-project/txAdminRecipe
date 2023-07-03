@@ -185,6 +185,11 @@ tasks:
     src: https://github.com/qbox-project/qbx-ambulancejob
 
   - action: download_github
+    dest: ./resources/[qbx]/qbx-medical
+    ref: main
+    src: https://github.com/qbox-project/qbx-medical
+
+  - action: download_github
     dest: ./resources/[qbx]/qbx-vehiclefailure
     ref: main
     src: https://github.com/qbox-project/qbx-vehiclefailure
