@@ -389,6 +389,6 @@ INSERT INTO `bank_accounts_new` (`id`, `amount`, `transactions`, `auth`, `isFroz
 CREATE TABLE IF NOT EXISTS `player_transactions` (
   `id` varchar(50) NOT NULL,
   `isFrozen` int(11) DEFAULT 0,
-  `transactions` longtext DEFAULT '[]',
+  `transactions` longtext,
   PRIMARY KEY (`id`)
 );
