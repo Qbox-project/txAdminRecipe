@@ -346,11 +346,6 @@ tasks:
     src: https://github.com/qbox-project/qbx-truckerjob
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx-keyminigame
-    ref: main
-    src: https://github.com/qbox-project/qbx-keyminigame
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx-fitbit
     ref: main
     src: https://github.com/qbox-project/qbx-fitbit
