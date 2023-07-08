@@ -17,6 +17,10 @@ tasks:
     dest: ./server.cfg
 
   - action: move_path
+    src: ./tmp/qbox/permissions.cfg
+    dest: ./permissions.cfg
+
+  - action: move_path
     src: ./tmp/qbox/ox.cfg
     dest: ./ox.cfg
 
