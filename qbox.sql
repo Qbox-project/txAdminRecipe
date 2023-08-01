@@ -366,8 +366,8 @@ INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
   `id` varchar(50) NOT NULL,
   `amount` int(11) DEFAULT 0,
-  `transactions` longtext DEFAULT '[]',
-  `auth` longtext DEFAULT '[]',
+  `transactions` longtext,
+  `auth` longtext,
   `isFrozen` int(11) DEFAULT 0,
   `creator` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
