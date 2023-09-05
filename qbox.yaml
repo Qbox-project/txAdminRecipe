@@ -69,6 +69,9 @@ tasks:
     ref: master
     src: https://github.com/qbox-project/connectqueue
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   - action: download_github
     dest: ./resources/[standalone]/scully_emotemenu
     ref: main
