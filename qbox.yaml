@@ -372,6 +372,9 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx-drugs
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+  
   - action: download_github
     dest: ./resources/[qbx]/qbx-lockpick
     ref: main
