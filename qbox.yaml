@@ -128,11 +128,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx-adminmenu
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx-multicharacter
-    ref: main
-    src: https://github.com/qbox-project/qbx-multicharacter
-
   - action: waste_time # prevent github throttling
     seconds: 10
 
