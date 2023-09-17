@@ -101,6 +101,13 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/illenium-appearance.zip
 
+  - action: download_file
+    path: ./tmp/um-idcard.zip
+    url: https://github.com/alp1x/um-idcard/releases/latest/download/um-idcard.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/um-idcard.zip
+
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
