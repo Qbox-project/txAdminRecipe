@@ -102,7 +102,7 @@ tasks:
     src: ./tmp/illenium-appearance.zip
 
   - action: download_github
-    dest: ./resources/[standalone]/MugShotBase64
+    dest: ./resources/[standalone]
     ref: main
     src: https://github.com/BaziForYou/MugShotBase64
 
