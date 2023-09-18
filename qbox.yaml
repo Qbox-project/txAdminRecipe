@@ -101,6 +101,11 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/illenium-appearance.zip
 
+  - action: download_github
+    dest: ./resources/[standalone]/MugShotBase64
+    ref: main
+    src: https://github.com/BaziForYou/MugShotBase64
+
   - action: download_file
     path: ./tmp/um-idcard.zip
     url: https://github.com/alp1x/um-idcard/releases/latest/download/um-idcard.zip
