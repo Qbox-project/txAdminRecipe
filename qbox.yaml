@@ -106,12 +106,10 @@ tasks:
     ref: main
     src: https://github.com/BaziForYou/MugShotBase64
 
-  - action: download_file
-    path: ./tmp/um-idcard.zip
-    url: https://github.com/alp1x/um-idcard/releases/latest/download/um-idcard.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/um-idcard.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_idcard
+    ref: main
+    src: https://github.com/Qbox-project/qbx_idcard
 
     # VOICE
   - action: download_github
