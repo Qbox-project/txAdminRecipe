@@ -101,6 +101,16 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/illenium-appearance.zip
 
+  - action: download_github
+    dest: ./resources/[standalone]
+    ref: main
+    src: https://github.com/BaziForYou/MugShotBase64
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_idcard
+    ref: main
+    src: https://github.com/Qbox-project/qbx_idcard
+
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
