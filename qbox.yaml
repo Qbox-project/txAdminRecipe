@@ -133,9 +133,9 @@ tasks:
 
   # Downloading Qbox resources
   - action: download_github
-    dest: ./resources/[qbx]/qbx-core
+    dest: ./resources/[qbx]/qbx_core
     ref: main
-    src: https://github.com/qbox-project/qbx-core
+    src: https://github.com/qbox-project/qbx_core
 
   - action: download_github
     dest: ./resources/[qbx]/qbx-scoreboard
