@@ -52,7 +52,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/screenshot-basic
     ref: master
-    src: https://github.com/citizenfx/screenshot-basic
+    src: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
 
   - action: download_github
     dest: ./resources/[standalone]/interact-sound
@@ -442,6 +442,17 @@ tasks:
     dest: ./resources/[ox]/ox_fuel
     ref: main
     src: https://github.com/overextended/ox_fuel
+
+    # NPWD
+  - action: download_github
+    dest: ./resources/[npwd]/npwd
+    ref: main
+    src: https://github.com/Qbox-project/npwd/releases/latest/download/npwd.zip
+
+  - action: download_github
+    dest: ./resources/[npwd]/npwd
+    ref: main
+    src: https://github.com/TonybynMp4/testyaml
 
   # Clean up
   - action: remove_path
