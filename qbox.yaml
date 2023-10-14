@@ -49,10 +49,12 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/safecracker
 
-  - action: download_github
+  - action: download_file
+    path: ./tmp/screenshot-basic.zip
+    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  - action: unzip
     dest: ./resources/[standalone]/screenshot-basic
-    ref: master
-    src: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+    src: ./tmp/screenshot-basic.zip
 
   - action: download_github
     dest: ./resources/[standalone]/interact-sound
@@ -439,10 +441,12 @@ tasks:
     src: https://github.com/overextended/ox_fuel
 
     # NPWD
-  - action: download_github
+  - action: download_file
+    path: ./tmp/npwd.zip
+    url: https://github.com/project-error/npwd/releases/latest/download/npwd.zip
+  - action: unzip
     dest: ./resources/[npwd]/npwd
-    ref: main
-    src: https://github.com/Qbox-project/npwd/releases/latest/download/npwd.zip
+    src: ./tmp/npwd.zip
 
   - action: query_database
     file: ./resources/[npwd]/npwd/import.sql
