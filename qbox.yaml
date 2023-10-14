@@ -259,11 +259,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_mechanicjob
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_phone
-    ref: main
-    src: https://github.com/qbox-project/qbx_phone
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_vineyard
     ref: main
     src: https://github.com/qbox-project/qbx_vineyard
@@ -449,10 +444,28 @@ tasks:
     ref: main
     src: https://github.com/Qbox-project/npwd/releases/latest/download/npwd.zip
 
+  - action: query_database
+    file: ./resources/[npwd]/npwd/import.sql
+
   - action: download_github
-    dest: ./resources/[npwd]/npwd
+    dest: ./resources/[npwd]/qbx_npwd
     ref: main
-    src: https://github.com/TonybynMp4/testyaml
+    src: https://github.com/Qbox-project/qbx_npwd
+
+  - action: move_path
+    src: ./resources/[npwd]/qbx_npwd/config.json
+    dest: ./resources/[npwd]/npwd/config.json
+    overwrite: true
+
+  #- action: download_github
+  #  dest: ./resources/[npwd]/[npwd-apps]
+  #  ref: main
+  #  src: https://github.com/Qbox-project/npwd_qbx_garages
+
+  #- action: download_github
+  #  dest: ./resources/[npwd]/[npwd-apps]
+  #  ref: main
+  #  src: https://github.com/Qbox-project/npwd_qbx_mail
 
   # Clean up
   - action: remove_path
