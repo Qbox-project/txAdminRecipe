@@ -454,7 +454,7 @@ tasks:
   - action: download_github
     dest: ./resources/[npwd]/qbx_npwd
     ref: main
-    src: https://github.com/TonybynMp4/qbx_npwd
+    src: https://github.com/Qbox-project/qbx_npwd
 
   - action: move_path
     src: ./resources/[npwd]/qbx_npwd/config.json
