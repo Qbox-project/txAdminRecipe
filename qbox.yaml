@@ -442,7 +442,7 @@ tasks:
   - action: download_github
     dest: ./resources/[npwd]/npwd
     ref: main
-    src: https://github.com/Qbox-project/npwd/releases/latest/download/npwd.zip
+    src: https://github.com/project-error/npwd/releases/latest/download/npwd.zip
 
   - action: query_database
     file: ./resources/[npwd]/npwd/import.sql
