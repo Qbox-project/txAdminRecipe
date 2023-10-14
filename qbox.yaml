@@ -441,7 +441,6 @@ tasks:
     # NPWD
   - action: download_github
     dest: ./resources/[npwd]/npwd
-    ref: main
     src: https://github.com/project-error/npwd/releases/latest/download/npwd.zip
 
   - action: query_database
