@@ -445,7 +445,7 @@ tasks:
     path: ./tmp/npwd.zip
     url: https://github.com/project-error/npwd/releases/latest/download/npwd.zip
   - action: unzip
-    dest: ./resources/[npwd]/npwd
+    dest: ./resources/[npwd]/
     src: ./tmp/npwd.zip
 
   - action: query_database
