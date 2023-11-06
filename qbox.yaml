@@ -49,10 +49,12 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/safecracker
 
-  - action: download_github
+  - action: download_file
+    path: ./tmp/screenshot-basic.zip
+    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  - action: unzip
     dest: ./resources/[standalone]/screenshot-basic
-    ref: master
-    src: https://github.com/citizenfx/screenshot-basic
+    src: ./tmp/screenshot-basic.zip
 
   - action: download_github
     dest: ./resources/[standalone]/interact-sound
@@ -259,11 +261,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_mechanicjob
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_phone
-    ref: main
-    src: https://github.com/qbox-project/qbx_phone
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_vineyard
     ref: main
     src: https://github.com/qbox-project/qbx_vineyard
@@ -442,6 +439,37 @@ tasks:
     dest: ./resources/[ox]/ox_fuel
     ref: main
     src: https://github.com/overextended/ox_fuel
+
+    # NPWD
+  - action: download_file
+    path: ./tmp/npwd.zip
+    url: https://github.com/project-error/npwd/releases/latest/download/npwd.zip
+  - action: unzip
+    dest: ./resources/[npwd]/
+    src: ./tmp/npwd.zip
+
+  - action: query_database
+    file: ./resources/[npwd]/npwd/import.sql
+
+  - action: download_github
+    dest: ./resources/[npwd]/qbx_npwd
+    ref: main
+    src: https://github.com/Qbox-project/qbx_npwd
+
+  - action: move_path
+    src: ./resources/[npwd]/qbx_npwd/config.json
+    dest: ./resources/[npwd]/npwd/config.json
+    overwrite: true
+
+  #- action: download_github
+  #  dest: ./resources/[npwd]/[npwd-apps]
+  #  ref: main
+  #  src: https://github.com/Qbox-project/npwd_qbx_garages
+
+  #- action: download_github
+  #  dest: ./resources/[npwd]/[npwd-apps]
+  #  ref: main
+  #  src: https://github.com/Qbox-project/npwd_qbx_mail
 
   # Clean up
   - action: remove_path
