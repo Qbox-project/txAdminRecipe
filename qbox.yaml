@@ -443,7 +443,7 @@ tasks:
     # NPWD
   - action: download_file
     path: ./tmp/npwd.zip
-    url: https://github.com/project-error/npwd/releases/latest/download/npwd.zip
+    url: https://github.com/project-error/npwd/releases/download/v1.8.2/npwd.zip
   - action: unzip
     dest: ./resources/[npwd]/
     src: ./tmp/npwd.zip
