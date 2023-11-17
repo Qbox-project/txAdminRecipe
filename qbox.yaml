@@ -316,6 +316,11 @@ tasks:
     src: https://github.com/qbox-project/qbx_diving
 
   - action: download_github
+    dest: ./resources/[qbx]/qbx_divegear
+    ref: main
+    src: https://github.com/qbox-project/qbx_divegear
+
+  - action: download_github
     dest: ./resources/[qbx]/qbx_cityhall
     ref: main
     src: https://github.com/qbox-project/qbx_cityhall
