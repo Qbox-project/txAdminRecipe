@@ -132,10 +132,12 @@ tasks:
     src: https://github.com/qbox-project/qbx_radio
 
   # Downloading Qbox resources
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_core
-    ref: main
-    src: https://github.com/qbox-project/qbx_core
+  - action: download_file
+    path: ./tmp/qbx_core.zip
+    url: https://github.com/qbox-project/qbx_core/releases/latest/download/qbx_core.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_core.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
