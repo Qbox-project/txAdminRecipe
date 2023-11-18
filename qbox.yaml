@@ -312,15 +312,19 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_recyclejob
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_diving
-    ref: main
-    src: https://github.com/qbox-project/qbx_diving
+  - action: download_file
+    path: ./tmp/qbx_diving.zip
+    url: https://github.com/qbox-project/qbx_diving/releases/latest/download/qbx_diving.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_diving.zip
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_divegear
-    ref: main
-    src: https://github.com/qbox-project/qbx_divegear
+  - action: download_file
+    path: ./tmp/qbx_divegear.zip
+    url: https://github.com/qbox-project/qbx_divegear/releases/latest/download/qbx_divegear.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_divegear.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_cityhall
