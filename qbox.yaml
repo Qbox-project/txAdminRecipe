@@ -117,7 +117,7 @@ tasks:
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/LICENSE.md
     path: ./resources/[standalone]/MugShotBase64/LICENSE.md
 
-  - action: download_github
+  - action: download_file
     dest: ./resources/[standalone]/Renewed-Weathersync
     ref: main
     src: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
@@ -412,7 +412,7 @@ tasks:
     ref: main
     src: https://github.com/Qbox-project/qbx_idcard
 
-  - action: download_github
+  - action: download_file
     dest: ./resources/[qbx]/qbx_binoculars
     ref: main
     src: https://github.com/Qbox-project/qbx_binoculars/releases/latest/download/qbx_binoculars.zip
