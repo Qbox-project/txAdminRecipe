@@ -118,9 +118,9 @@ tasks:
     path: ./resources/[standalone]/MugShotBase64/LICENSE.md
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_idcard
+    dest: ./resources/[standalone]/Renewed-Weathersync
     ref: main
-    src: https://github.com/Qbox-project/qbx_idcard
+    src: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
 
     # VOICE
   - action: download_github
@@ -231,11 +231,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_crypto
     ref: main
     src: https://github.com/qbox-project/qbx_crypto
-
-  - action: download_github
-    dest: ./resources/[standalone]/Renewed-Weathersync
-    ref: main
-    src: https://github.com/Renewed-Scripts/Renewed-Weathersync
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_policejob
@@ -411,6 +406,26 @@ tasks:
     dest: ./resources/[qbx]/qbx_loading
     ref: main
     src: https://github.com/qbox-project/qbx_loading
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_idcard
+    ref: main
+    src: https://github.com/Qbox-project/qbx_idcard
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_binoculars
+    ref: main
+    src: https://github.com/Qbox-project/qbx_binoculars/releases/latest/download/qbx_binoculars.zip
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_carwash
+    ref: main
+    src: https://github.com/Qbox-project/qbx_carwash
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_fireworks
+    ref: main
+    src: https://github.com/Qbox-project/qbx_fireworks
 
   # OX
   - action: download_file
