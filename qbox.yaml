@@ -233,9 +233,9 @@ tasks:
     src: https://github.com/qbox-project/qbx_crypto
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_weathersync
+    dest: ./resources/[standalone]/Renewed-Weathersync
     ref: main
-    src: https://github.com/qbox-project/qbx_weathersync
+    src: https://github.com/Renewed-Scripts/Renewed-Weathersync
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_policejob
