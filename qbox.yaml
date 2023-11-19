@@ -118,9 +118,11 @@ tasks:
     path: ./resources/[standalone]/MugShotBase64/LICENSE.md
 
   - action: download_file
-    dest: ./resources/[standalone]/Renewed-Weathersync
-    ref: main
-    src: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
+    path: ./tmp/Renewed-Weathersync.zip
+    url: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/Renewed-Weathersync.zip
 
     # VOICE
   - action: download_github
@@ -413,9 +415,11 @@ tasks:
     src: https://github.com/Qbox-project/qbx_idcard
 
   - action: download_file
-    dest: ./resources/[qbx]/qbx_binoculars
-    ref: main
-    src: https://github.com/Qbox-project/qbx_binoculars/releases/latest/download/qbx_binoculars.zip
+    path: ./tmp/qbx_binoculars.zip
+    url: https://github.com/Qbox-project/qbx_binoculars/releases/latest/download/qbx_binoculars.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_binoculars.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_carwash
