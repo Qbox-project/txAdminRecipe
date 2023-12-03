@@ -230,11 +230,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_radialmenu
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_crypto
-    ref: main
-    src: https://github.com/qbox-project/qbx_crypto
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_policejob
     ref: main
     src: https://github.com/qbox-project/qbx_policejob
@@ -293,11 +288,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_spawn
     ref: main
     src: https://github.com/qbox-project/qbx_spawn
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_skillbar
-    ref: main
-    src: https://github.com/qbox-project/qbx_skillbar
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_smallresources
