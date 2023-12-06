@@ -290,6 +290,11 @@ tasks:
     src: https://github.com/qbox-project/qbx_spawn
 
   - action: download_github
+    dest: ./resources/[qbx]/qbx_skillbar
+    ref: main
+    src: https://github.com/qbox-project/qbx_skillbar
+
+  - action: download_github
     dest: ./resources/[qbx]/qbx_smallresources
     ref: main
     src: https://github.com/qbox-project/qbx_smallresources
