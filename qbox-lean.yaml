@@ -55,11 +55,6 @@ tasks:
     src: https://github.com/citizenfx/screenshot-basic
 
   - action: download_github
-    dest: ./resources/[standalone]/interact-sound
-    ref: master
-    src: https://github.com/qbox-project/interact-sound
-
-  - action: download_github
     dest: ./resources/[standalone]/mhacking
     ref: main
     src: https://github.com/qbox-project/mhacking
