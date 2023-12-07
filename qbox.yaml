@@ -265,11 +265,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_scrapyard
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_tunerchip
-    ref: main
-    src: https://github.com/qbox-project/qbx_tunerchip
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_towjob
     ref: main
     src: https://github.com/qbox-project/qbx_towjob
