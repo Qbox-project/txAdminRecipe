@@ -241,14 +241,6 @@ tasks:
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_commandbinding
-    ref: main
-    src: https://github.com/qbox-project/qbx_commandbinding
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
-  
-  - action: download_github
     dest: ./resources/[qbx]/qbx_lockpick
     ref: main
     src: https://github.com/qbox-project/qbx_lockpick
