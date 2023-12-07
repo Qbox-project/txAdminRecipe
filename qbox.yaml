@@ -235,11 +235,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_policejob
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_traphouse
-    ref: main
-    src: https://github.com/qbox-project/qbx_traphouse
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_apartments
     ref: main
     src: https://github.com/qbox-project/qbx_apartments
