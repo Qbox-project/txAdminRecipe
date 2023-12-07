@@ -352,11 +352,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_truckerjob
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_fitbit
-    ref: main
-    src: https://github.com/qbox-project/qbx_fitbit
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_garbagejob
     ref: main
     src: https://github.com/qbox-project/qbx_garbagejob
