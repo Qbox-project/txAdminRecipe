@@ -61,11 +61,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/mhacking
 
-  - action: download_github
-    dest: ./resources/[standalone]/connectqueue
-    ref: master
-    src: https://github.com/qbox-project/connectqueue
-
   - action: waste_time # prevent github throttling
     seconds: 10
 
