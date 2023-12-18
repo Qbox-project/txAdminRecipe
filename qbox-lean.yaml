@@ -57,11 +57,6 @@ tasks:
     src: ./tmp/screenshot-basic.zip
 
   - action: download_github
-    dest: ./resources/[standalone]/interact-sound
-    ref: master
-    src: https://github.com/qbox-project/interact-sound
-
-  - action: download_github
     dest: ./resources/[standalone]/mhacking
     ref: main
     src: https://github.com/qbox-project/mhacking
@@ -220,11 +215,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_vehiclekeys
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_skillbar
-    ref: main
-    src: https://github.com/qbox-project/qbx_skillbar
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_smallresources
     ref: main
     src: https://github.com/qbox-project/qbx_smallresources
@@ -237,14 +227,6 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 10
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_commandbinding
-    ref: main
-    src: https://github.com/qbox-project/qbx_commandbinding
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
-  
   - action: download_github
     dest: ./resources/[qbx]/qbx_lockpick
     ref: main

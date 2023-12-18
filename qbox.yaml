@@ -57,11 +57,6 @@ tasks:
     src: ./tmp/screenshot-basic.zip
 
   - action: download_github
-    dest: ./resources/[standalone]/interact-sound
-    ref: master
-    src: https://github.com/qbox-project/interact-sound
-
-  - action: download_github
     dest: ./resources/[standalone]/mhacking
     ref: main
     src: https://github.com/qbox-project/mhacking
@@ -230,19 +225,9 @@ tasks:
     src: https://github.com/qbox-project/qbx_radialmenu
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_crypto
-    ref: main
-    src: https://github.com/qbox-project/qbx_crypto
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_policejob
     ref: main
     src: https://github.com/qbox-project/qbx_policejob
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_traphouse
-    ref: main
-    src: https://github.com/qbox-project/qbx_traphouse
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_apartments
@@ -270,11 +255,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_scrapyard
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_tunerchip
-    ref: main
-    src: https://github.com/qbox-project/qbx_tunerchip
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_towjob
     ref: main
     src: https://github.com/qbox-project/qbx_towjob
@@ -293,11 +273,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_spawn
     ref: main
     src: https://github.com/qbox-project/qbx_spawn
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_skillbar
-    ref: main
-    src: https://github.com/qbox-project/qbx_skillbar
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_smallresources
@@ -370,16 +345,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_truckerjob
     ref: main
     src: https://github.com/qbox-project/qbx_truckerjob
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_fitbit
-    ref: main
-    src: https://github.com/qbox-project/qbx_fitbit
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_commandbinding
-    ref: main
-    src: https://github.com/qbox-project/qbx_commandbinding
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_garbagejob
