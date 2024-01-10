@@ -160,7 +160,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_management
     ref: main
-    src: https://github.com/qbox-project/qbx_management
+    src: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_garages
