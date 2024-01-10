@@ -174,7 +174,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_management
     ref: main
-    src: https://github.com/qbox-project/qbx_management
+    src: src: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
@@ -433,7 +433,7 @@ tasks:
     # NPWD
   - action: download_file
     path: ./tmp/npwd.zip
-    url: https://github.com/project-error/npwd/releases/download/3.0.0/npwd.zip
+    url: https://github.com/project-error/npwd/releases/download/3.8.1/npwd.zip
   - action: unzip
     dest: ./resources/[npwd]/
     src: ./tmp/npwd.zip
