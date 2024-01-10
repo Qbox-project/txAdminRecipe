@@ -174,7 +174,10 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_management
     ref: main
-    src: src: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
+    src: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
+    - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_management.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
