@@ -171,11 +171,10 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_hud
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_management
-    ref: main
+  - action: download_file
+    path: ./tmp/qbx_management.zip
     src: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
-    - action: unzip
+  - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
 
