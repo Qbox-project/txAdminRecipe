@@ -173,7 +173,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/qbx_management.zip
-    src: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
+    url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
