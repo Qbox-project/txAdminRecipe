@@ -157,6 +157,11 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_hud
 
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_seatbelt
+    ref: main
+    src: https://github.com/qbox-project/qbx_seatbelt
+
   - action: download_file
     path: ./tmp/qbx_management.zip
     url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
