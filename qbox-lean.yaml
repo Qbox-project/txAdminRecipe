@@ -61,11 +61,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/mhacking
 
-  - action: download_github
-    dest: ./resources/[standalone]/connectqueue
-    ref: master
-    src: https://github.com/qbox-project/connectqueue
-
   - action: waste_time # prevent github throttling
     seconds: 10
 
@@ -165,9 +160,16 @@ tasks:
     src: https://github.com/qbox-project/qbx_hud
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_management
+    dest: ./resources/[qbx]/qbx_seatbelt
     ref: main
-    src: https://github.com/qbox-project/qbx_management
+    src: https://github.com/qbox-project/qbx_seatbelt
+
+  - action: download_file
+    path: ./tmp/qbx_management.zip
+    url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_management.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_garages
