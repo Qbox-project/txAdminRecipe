@@ -303,14 +303,14 @@ tasks:
     path: ./tmp/npwd_qbx_garages.zip
     url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
   - action: unzip
-    dest: ./resources/[npwd]/[npwd-apps]
+    dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_garages.zip
 
   - action: download_file
     path: ./tmp/npwd_qbx_mail.zip
     url: https://github.com/Qbox-project/npwd_qbx_mail/releases/latest/download/npwd_qbx_mail.zip
   - action: unzip
-    dest: ./resources/[npwd]/[npwd-apps]
+    dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
 
 
