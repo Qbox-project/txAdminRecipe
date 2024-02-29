@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `bans` (
   KEY `license` (`license`),
   KEY `discord` (`discord`),
   KEY `ip` (`ip`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `dealers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -130,13 +130,12 @@ CREATE TABLE IF NOT EXISTS `players` (
   `position` text NOT NULL,
   `metadata` text NOT NULL,
   `inventory` longtext DEFAULT NULL,
-  `phone_number` VARCHAR(20) DEFAULT NULL,
   `last_updated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`citizenid`),
   KEY `id` (`id`),
   KEY `last_updated` (`last_updated`),
   KEY `license` (`license`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `playerskins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -217,6 +216,15 @@ CREATE TABLE IF NOT EXISTS `player_warns` (
   `warnId` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS `player_groups` (
+  `citizenid` VARCHAR(50) NOT NULL,
+  `group` VARCHAR(50) NOT NULL,
+  `type` VARCHAR(50) NOT NULL,
+  `grade` TINYINT(3) UNSIGNED NOT NULL,
+  PRIMARY KEY (`citizenid`, `type`, `group`),
+  CONSTRAINT `fk_citizenid` FOREIGN KEY (`citizenid`) REFERENCES `players` (`citizenid`) ON UPDATE CASCADE ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `management_funds` (
 `id` INT(11) NOT NULL AUTO_INCREMENT,
