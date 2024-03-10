@@ -64,19 +64,17 @@ CREATE TABLE IF NOT EXISTS `player_houses` (
 
 CREATE TABLE IF NOT EXISTS `house_plants` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `building` varchar(50) DEFAULT NULL,
-  `stage` varchar(50) DEFAULT 'stage-a',
-  `sort` varchar(50) DEFAULT NULL,
-  `gender` varchar(50) DEFAULT NULL,
-  `food` int(11) DEFAULT 100,
-  `health` int(11) DEFAULT 100,
-  `progress` int(11) DEFAULT 0,
-  `coords` text DEFAULT NULL,
-  `plantid` varchar(50) DEFAULT NULL,
+  `building` varchar(30) NOT NULL,
+  `stage` varchar(11) NOT NULL DEFAULT 'stage1',
+  `sort` varchar(30) NOT NULL,
+  `gender` enum('male', 'female') NOT NULL,
+  `food` tinyint NOT NULL DEFAULT 100,
+  `health` tinyint NOT NULL DEFAULT 100,
+  `progress` tinyint NOT NULL DEFAULT 0,
+  `coords` tinytext NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `building` (`building`),
-  KEY `plantid` (`plantid`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+  KEY `building` (`building`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `lapraces` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
