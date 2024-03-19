@@ -305,10 +305,12 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_cityhall
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_truckrobbery
-    ref: main
-    src: https://github.com/qbox-project/qbx_truckrobbery
+  - action: download_file
+    path: ./tmp/qbx_truckrobbery.zip
+    url: https://github.com/qbox-project/qbx_truckrobbery/releases/latest/download/qbx_truckrobbery.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_truckrobbery.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_pawnshop
