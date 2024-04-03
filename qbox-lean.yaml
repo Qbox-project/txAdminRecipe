@@ -222,6 +222,11 @@ tasks:
     src: https://github.com/qbox-project/qbx_smallresources
 
   - action: download_github
+    dest: ./resources/[qbx]/qbx_density
+    ref: main
+    src: https://github.com/Qbox-project/qbx_density
+
+  - action: download_github
     dest: ./resources/[qbx]/qbx_cityhall
     ref: main
     src: https://github.com/qbox-project/qbx_cityhall
