@@ -452,7 +452,7 @@ tasks:
     # NPWD
   - action: download_file
     path: ./tmp/npwd.zip
-    url: https://github.com/project-error/npwd/releases/download/latest/npwd.zip
+    url: https://github.com/project-error/npwd/releases/download/3.14.3/npwd.zip
   - action: unzip
     dest: ./resources/[npwd]/
     src: ./tmp/npwd.zip
