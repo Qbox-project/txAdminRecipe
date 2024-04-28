@@ -1,0 +1,249 @@
+$engine: 3
+$onesync: on
+name: Qbox Stable
+version: 1.0.0
+author: Manason
+description: Only includes stable, released resources. Recommend for those who want a working server out of the box.
+
+tasks:
+  #  Download Base Files
+  - action: download_github
+    src: https://github.com/qbox-project/txAdminRecipe
+    ref: main
+    dest: ./tmp/qbox
+
+  - action: move_path
+    src: ./tmp/qbox/server.cfg
+    dest: ./server.cfg
+
+  - action: move_path
+    src: ./tmp/qbox/permissions.cfg
+    dest: ./permissions.cfg
+
+  - action: move_path
+    src: ./tmp/qbox/ox.cfg
+    dest: ./ox.cfg
+
+  - action: move_path
+    src: ./tmp/qbox/myLogo.png
+    dest: ./myLogo.png
+
+  # Prepare Database
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/qbox/qbox.sql
+
+  # STANDALONE
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    subpath: resources
+    dest: ./resources/[cfx-default]
+
+  - action: download_github
+    dest: ./resources/[standalone]/bob74_ipl
+    ref: master
+    src: https://github.com/Bob74/bob74_ipl
+
+  - action: download_github
+    dest: ./resources/[standalone]/safecracker
+    ref: main
+    src: https://github.com/qbox-project/safecracker
+
+  - action: download_file
+    path: ./tmp/screenshot-basic.zip
+    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  - action: unzip
+    dest: ./resources/[standalone]/screenshot-basic
+    src: ./tmp/screenshot-basic.zip
+
+  - action: download_github
+    dest: ./resources/[standalone]/mhacking
+    ref: main
+    src: https://github.com/qbox-project/mhacking
+
+  - action: download_github
+    dest: ./resources/[standalone]/scully_emotemenu
+    ref: main
+    src: https://github.com/Scullyy/scully_emotemenu
+
+  - action: download_github
+    dest: ./resources/[standalone]/PolyZone
+    ref: master
+    src: https://github.com/qbox-project/PolyZone
+
+  - action: download_github
+    dest: ./resources/[standalone]/ultra-voltlab
+    ref: main
+    src: https://github.com/ultrahacx/ultra-voltlab
+
+  - action: download_file
+    path: ./tmp/Renewed-Banking.zip
+    url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/Renewed-Banking.zip
+
+  - action: download_file
+    path: ./tmp/illenium-appearance.zip
+    url: https://github.com/iLLeniumStudios/illenium-appearance/releases/latest/download/illenium-appearance.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/illenium-appearance.zip
+
+  - action: download_github
+    dest: ./resources/[standalone]/MugShotBase64
+    ref: main
+    src: https://github.com/BaziForYou/MugShotBase64
+    subpath: MugShotBase64
+
+  - action: download_file
+    url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/README.md
+    path: ./resources/[standalone]/MugShotBase64/README.md
+
+  - action: download_file
+    url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/LICENSE.md
+    path: ./resources/[standalone]/MugShotBase64/LICENSE.md
+
+    # VOICE
+  - action: download_github
+    dest: ./resources/[voice]/pma-voice
+    ref: main
+    src: https://github.com/AvarianKnight/pma-voice
+
+  - action: download_file
+    path: ./tmp/qbx_radio.zip
+    url: https://github.com/qbox-project/qbx_radio/releases/latest/download/qbx_radio.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_radio.zip
+
+  # Downloading Qbox resources
+  - action: download_file
+    path: ./tmp/qbx_core.zip
+    url: https://github.com/qbox-project/qbx_core/releases/latest/download/qbx_core.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_core.zip
+
+  - action: download_file
+    path: ./tmp/qbx_management.zip
+    url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_management.zip
+
+  - action: download_file
+    path: ./tmp/qbx_diving.zip
+    url: https://github.com/qbox-project/qbx_diving/releases/latest/download/qbx_diving.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_diving.zip
+
+  - action: download_file
+    path: ./tmp/qbx_divegear.zip
+    url: https://github.com/qbox-project/qbx_divegear/releases/latest/download/qbx_divegear.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_divegear.zip
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  - action: download_file
+    path: ./tmp/qbx_binoculars.zip
+    url: https://github.com/qbox-project/qbx_binoculars/releases/latest/download/qbx_binoculars.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_binoculars.zip
+
+  - action: download_file
+    path: ./tmp/qbx_truckrobbery.zip
+    url: https://github.com/qbox-project/qbx_truckrobbery/releases/latest/download/qbx_truckrobbery.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_truckrobbery.zip
+
+  - action: download_file
+    path: ./tmp/Renewed-Weathersync.zip
+    url: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/Renewed-Weathersync.zip
+
+  # OX
+  - action: download_file
+    path: ./tmp/ox_lib.zip
+    url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_lib.zip
+
+  - action: download_github
+    dest: ./resources/[ox]/ox_target
+    ref: main
+    src: https://github.com/overextended/ox_target
+
+  - action: download_file
+    path: ./tmp/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/oxmysql.zip
+
+  - action: download_file
+    path: ./tmp/ox_doorlock.zip
+    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_doorlock.zip
+
+  - action: download_file
+    path: ./tmp/ox_inventory.zip
+    url: https://github.com/overextended/ox_inventory/releases/latest/download/ox_inventory.zip
+  - action: unzip
+    dest: ./resources/[ox]
+    src: ./tmp/ox_inventory.zip
+
+  - action: download_github
+    dest: ./resources/[ox]/ox_fuel
+    ref: main
+    src: https://github.com/overextended/ox_fuel
+
+    # NPWD
+  - action: download_file
+    path: ./tmp/npwd.zip
+    url: https://github.com/project-error/npwd/releases/download/3.14.3/npwd.zip
+  - action: unzip
+    dest: ./resources/[npwd]/
+    src: ./tmp/npwd.zip
+
+  - action: query_database
+    file: ./resources/[npwd]/npwd/import.sql
+
+  - action: download_github
+    dest: ./resources/[npwd]/qbx_npwd
+    ref: main
+    src: https://github.com/Qbox-project/qbx_npwd
+
+  - action: move_path
+    src: ./resources/[npwd]/qbx_npwd/config.json
+    dest: ./resources/[npwd]/npwd/config.json
+    overwrite: true
+
+  - action: download_file
+    path: ./tmp/npwd_qbx_garages.zip
+    url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
+  - action: unzip
+    dest: ./resources/[npwd-apps]
+    src: ./tmp/npwd_qbx_garages.zip
+
+  - action: download_file
+    path: ./tmp/npwd_qbx_mail.zip
+    url: https://github.com/Qbox-project/npwd_qbx_mail/releases/latest/download/npwd_qbx_mail.zip
+  - action: unzip
+    dest: ./resources/[npwd-apps]
+    src: ./tmp/npwd_qbx_mail.zip
+
+  # Clean up
+  - action: remove_path
+    path: ./tmp
