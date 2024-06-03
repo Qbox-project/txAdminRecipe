@@ -194,11 +194,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_lapraces
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_houses
-    ref: main
-    src: https://github.com/qbox-project/qbx_houses
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_garages
     ref: main
     src: https://github.com/qbox-project/qbx_garages
@@ -232,9 +227,9 @@ tasks:
     src: https://github.com/qbox-project/qbx_policejob
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_apartments
+    dest: ./resources/[qbx]/qbx_properties
     ref: main
-    src: https://github.com/qbox-project/qbx_apartments
+    src: https://github.com/qbox-project/qbx_properties
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehiclekeys
