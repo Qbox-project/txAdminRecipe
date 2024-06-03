@@ -318,4 +318,4 @@ CREATE TABLE IF NOT EXISTS `properties` (
 	`decorations` JSON NOT NULL DEFAULT (JSON_OBJECT()), /* the model name with its corresponding coords that needs to be placed */
 	FOREIGN KEY (owner) REFERENCES `players` (`citizenid`),
 	PRIMARY KEY (id)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
