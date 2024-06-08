@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `apartments` (
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `bans` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `dealers` (
   `time` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
   `createdby` varchar(50) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `houselocations` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `houselocations` (
   `garage` text DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_houses` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `player_houses` (
   KEY `house` (`house`),
   KEY `citizenid` (`citizenid`),
   KEY `identifier` (`identifier`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `house_plants` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `house_plants` (
   `coords` tinytext NOT NULL,
   PRIMARY KEY (`id`),
   KEY `building` (`building`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `lapraces` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `lapraces` (
   `raceid` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `raceid` (`raceid`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `occasion_vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `occasion_vehicles` (
   `occasionid` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `occasionId` (`occasionid`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_mails` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `player_mails` (
   `button` text DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `players` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -149,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `playerskins` (
   PRIMARY KEY (`id`),
   KEY `citizenid` (`citizenid`),
   KEY `active` (`active`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_outfits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `player_outfits` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `citizenid_outfitname_model` (`citizenid`,`outfitname`,`model`),
   KEY `citizenid` (`citizenid`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `management_outfits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -174,7 +174,7 @@ CREATE TABLE IF NOT EXISTS `management_outfits` (
   `props` text DEFAULT NULL,
   `components` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_outfit_codes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -182,7 +182,7 @@ CREATE TABLE IF NOT EXISTS `player_outfit_codes` (
   `code` varchar(50) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   KEY `FK_player_outfit_codes_player_outfits` (`outfitid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -205,7 +205,7 @@ CREATE TABLE IF NOT EXISTS `player_vehicles` (
   KEY `plate` (`plate`),
   KEY `citizenid` (`citizenid`),
   KEY `license` (`license`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_warns` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -214,7 +214,7 @@ CREATE TABLE IF NOT EXISTS `player_warns` (
   `reason` text DEFAULT NULL,
   `warnId` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `player_groups` (
   `citizenid` VARCHAR(50) NOT NULL,
@@ -233,7 +233,7 @@ CREATE TABLE IF NOT EXISTS `management_funds` (
 PRIMARY KEY (`id`),
 UNIQUE KEY `job_name` (`job_name`),
 KEY `type` (`type`)
-);
+) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
@@ -254,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `data` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(1, 'vangelico_jewellery', '{"maxDistance":2,"groups":{"police":0},"doors":[{"model":1425919976,"coords":{"x":-631.9553833007813,"y":-236.33326721191407,"z":38.2065315246582},"heading":306},{"model":9467943,"coords":{"x":-630.426513671875,"y":-238.4375457763672,"z":38.2065315246582},"heading":306}],"state":1,"coords":{"x":-631.19091796875,"y":-237.38540649414063,"z":38.2065315246582},"hideUi":true}'),
@@ -272,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
   `isFrozen` int(11) DEFAULT 0,
   `creator` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-);
+) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `bank_accounts_new` (`id`, `amount`, `transactions`, `auth`, `isFrozen`, `creator`) VALUES
 	('ambulance', 0, '[]', '[]', 0, NULL),
@@ -292,7 +292,7 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
   `isFrozen` int(11) DEFAULT 0,
   `transactions` longtext,
   PRIMARY KEY (`id`)
-);
+) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `vehicle_financing` (
     `vehicleId` int(11) NOT NULL,
