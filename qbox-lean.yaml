@@ -131,6 +131,13 @@ tasks:
     dest: ./resources/[qbx]
     src: ./tmp/qbx_core.zip
 
+  - action: download_file
+    path: ./tmp/qbx_vehicles.zip
+    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_vehicles.zip
+
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
     ref: main
