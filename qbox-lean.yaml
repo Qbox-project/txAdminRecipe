@@ -70,11 +70,6 @@ tasks:
     src: https://github.com/Scullyy/scully_emotemenu
 
   - action: download_github
-    dest: ./resources/[standalone]/PolyZone
-    ref: master
-    src: https://github.com/qbox-project/PolyZone
-
-  - action: download_github
     dest: ./resources/[standalone]/ultra-voltlab
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
@@ -240,11 +235,6 @@ tasks:
 
   - action: waste_time # prevent github throttling
     seconds: 10
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_lockpick
-    ref: main
-    src: https://github.com/qbox-project/qbx_lockpick
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_loading
