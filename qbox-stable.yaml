@@ -3,7 +3,7 @@ $onesync: on
 name: Qbox Stable
 version: 1.0.0
 author: Manason
-description: Only includes stable, released resources. Recommend for those who want a working server out of the box.
+description: Only includes stable, released resources. Recommend for those who want a working server out of the box. However some popular resources may be missing.
 
 tasks:
   #  Download Base Files
@@ -65,11 +65,6 @@ tasks:
     dest: ./resources/[standalone]/scully_emotemenu
     ref: main
     src: https://github.com/Scullyy/scully_emotemenu
-
-  - action: download_github
-    dest: ./resources/[standalone]/PolyZone
-    ref: master
-    src: https://github.com/qbox-project/PolyZone
 
   - action: download_github
     dest: ./resources/[standalone]/ultra-voltlab
@@ -170,6 +165,13 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
 
+  - action: download_file
+    path: ./tmp/qbx_vehicles.zip
+    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_vehicles.zip
+
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
@@ -230,12 +232,7 @@ tasks:
     dest: ./resources/[npwd]/npwd/config.json
     overwrite: true
 
-  - action: download_file
-    path: ./tmp/npwd_qbx_garages.zip
-    url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
-  - action: unzip
-    dest: ./resources/[npwd-apps]
-    src: ./tmp/npwd_qbx_garages.zip
+
 
   - action: download_file
     path: ./tmp/npwd_qbx_mail.zip
