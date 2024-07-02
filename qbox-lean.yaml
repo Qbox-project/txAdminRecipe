@@ -173,10 +173,12 @@ tasks:
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_garages
-    ref: main
-    src: https://github.com/qbox-project/qbx_garages
+  - action: download_file
+    path: ./tmp/qbx_garages.zip
+    url: https://github.com/qbox-project/qbx_garages/releases/latest/download/qbx_garages.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_garages.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_ambulancejob

@@ -172,6 +172,13 @@ tasks:
     dest: ./resources/[qbx]
     src: ./tmp/qbx_vehicles.zip
 
+  - action: download_file
+    path: ./tmp/qbx_garages.zip
+    url: https://github.com/qbox-project/qbx_garages/releases/latest/download/qbx_garages.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_garages.zip
+
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
@@ -231,8 +238,6 @@ tasks:
     src: ./resources/[npwd]/qbx_npwd/config.json
     dest: ./resources/[npwd]/npwd/config.json
     overwrite: true
-
-
 
   - action: download_file
     path: ./tmp/npwd_qbx_mail.zip
