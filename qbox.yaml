@@ -356,11 +356,6 @@ tasks:
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_interior
-    ref: main
-    src: https://github.com/qbox-project/qbx_interior
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_loading
     ref: main
     src: https://github.com/qbox-project/qbx_loading
