@@ -118,6 +118,7 @@ tasks:
   - action: copy_path
     src: ./myLogo.png
     dest: ./resources/[standalone]/loadscreen/html/assets/logo.png
+    overwrite: true
 
     # VOICE
   - action: download_github

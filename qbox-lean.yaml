@@ -111,6 +111,7 @@ tasks:
   - action: copy_path
     src: ./myLogo.png
     dest: ./resources/[standalone]/loadscreen/html/assets/logo.png
+    overwrite: true
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_idcard
