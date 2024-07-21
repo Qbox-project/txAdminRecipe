@@ -102,6 +102,16 @@ tasks:
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/LICENSE.md
     path: ./resources/[standalone]/MugShotBase64/LICENSE.md
 
+  - action: download_file
+    path: ./tmp/loadscreen.zip
+    url: https://github.com/D4isDAVID/loadscreen/releases/latest/download/loadscreen.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/loadscreen.zip
+  - action: copy_path
+    src: ./myLogo.png
+    dest: ./resources/[standalone]/loadscreen/html/assets/logo.png
+
   - action: download_github
     dest: ./resources/[qbx]/qbx_idcard
     ref: main
