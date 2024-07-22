@@ -99,6 +99,17 @@ tasks:
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/LICENSE.md
     path: ./resources/[standalone]/MugShotBase64/LICENSE.md
 
+  - action: download_file
+    path: ./tmp/loadscreen.zip
+    url: https://github.com/D4isDAVID/loadscreen/releases/latest/download/loadscreen.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/loadscreen.zip
+  - action: copy_path
+    src: ./myLogo.png
+    dest: ./resources/[standalone]/loadscreen/html/assets/logo.png
+    overwrite: true
+
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
@@ -185,13 +196,6 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_smallresources.zip
-
-  - action: download_file
-    path: ./tmp/qbx_loading.zip
-    url: https://github.com/qbox-project/qbx_loading/releases/latest/download/qbx_loading.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_loading.zip
 
   # OX
   - action: download_file
