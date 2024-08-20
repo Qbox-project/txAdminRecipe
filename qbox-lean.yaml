@@ -280,7 +280,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
-    url: https://github.com/overextended/ox_inventory/releases/tag/v2.41.0/download/ox_inventory.zip
+    url: https://github.com/overextended/ox_inventory/releases/v2.41.0/download/ox_inventory.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
