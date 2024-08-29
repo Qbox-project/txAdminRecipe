@@ -232,9 +232,9 @@ tasks:
     src: https://github.com/qbox-project/qbx_radialmenu
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_policejob
+    dest: ./resources/[qbx]/qbx_police
     ref: main
-    src: https://github.com/qbox-project/qbx_policejob
+    src: https://github.com/qbox-project/qbx_police
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_properties
