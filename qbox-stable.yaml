@@ -209,7 +209,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/ox_target.zip
-    url: https://github.com/overextended/ox_target/releases/download/v1.16.0/ox_target.zip
+    url: https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_target.zip
@@ -223,14 +223,14 @@ tasks:
 
   - action: download_file
     path: ./tmp/ox_doorlock.zip
-    url: https://github.com/overextended/ox_doorlock/releases/download/v1.17.0/ox_doorlock.zip
+    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
-    url: https://github.com/overextended/ox_inventory/releases/download/v2.41.0/ox_inventory.zip
+    url: https://github.com/overextended/ox_inventory/releases/latest/download/ox_inventory.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
