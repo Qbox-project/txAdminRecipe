@@ -165,11 +165,6 @@ tasks:
     src: https://github.com/qbox-project/qbx_vehicleshop
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_prison
-    ref: main
-    src: https://github.com/qbox-project/qbx_prison
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_hud
     ref: main
     src: https://github.com/qbox-project/qbx_hud
@@ -203,11 +198,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_medical
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_vehiclefailure
-    ref: main
-    src: https://github.com/qbox-project/qbx_vehiclefailure
-
   - action: waste_time # prevent github throttling
     seconds: 10
 
@@ -222,6 +212,22 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
+
+    # replaces qbx_prison
+  - action: download_file
+    path: ./tmp/xt-prison.zip
+    url: https://github.com/xT-Development/xt-prison/releases/latest/download/xt-prison.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/xt-prison.zip
+
+    # replaces qbx_vehiclefailure
+  - action: download_file
+    path: ./tmp/vehiclehandler.zip
+    url: https://github.com/QuantumMalice/vehiclehandler/releases/latest/download/vehiclehandler.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/vehiclehandler.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_police
