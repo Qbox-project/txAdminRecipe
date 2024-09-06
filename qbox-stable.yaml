@@ -178,6 +178,22 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
 
+    # replaces qbx_prison
+  - action: download_file
+    path: ./tmp/xt-prison.zip
+    url: https://github.com/xT-Development/xt-prison/releases/latest/download/xt-prison.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/xt-prison.zip
+
+    # replaces qbx_vehiclefailure
+  - action: download_file
+    path: ./tmp/vehiclehandler.zip
+    url: https://github.com/QuantumMalice/vehiclehandler/releases/latest/download/vehiclehandler.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/vehiclehandler.zip
+
   - action: download_file
     path: ./tmp/qbx_vehicles.zip
     url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
