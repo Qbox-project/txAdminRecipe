@@ -8,7 +8,7 @@ description: A FiveM core with a load of bloat.
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/qbox-project/txAdminRecipe
+    src: https://github.com/Shizojin/txAdminRecipe
     ref: main
     dest: ./tmp/qbox
 
