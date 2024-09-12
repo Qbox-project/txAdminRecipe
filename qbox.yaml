@@ -448,7 +448,7 @@ tasks:
 
   - action: download_github
     dest: ./resources/[ox]/ox_fuel
-    ref: v1.5.1
+    ref: v1.4.0
     src: https://github.com/overextended/ox_fuel
 
     # NPWD
