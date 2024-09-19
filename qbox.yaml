@@ -142,7 +142,7 @@ tasks:
     path: ./tmp/mana_audio.zip
     url: https://github.com/Manason/mana_audio/releases/latest/download/mana_audio.zip
   - action: unzip
-    dest: ./resources/[qbx]
+    dest: ./resources/[standalone]
     src: ./tmp/mana_audio.zip
 
     # VOICE
