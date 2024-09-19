@@ -112,6 +112,13 @@ tasks:
     dest: ./resources/[standalone]/loadscreen/html/assets/logo.png
     overwrite: true
 
+  - action: download_file
+    path: ./tmp/mana_audio.zip
+    url: https://github.com/Manason/mana_audio/releases/latest/download/mana_audio.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/mana_audio.zip
+
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
