@@ -145,6 +145,20 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/mana_audio.zip
 
+    - action: waste_time # prevent github throttling
+    seconds: 10
+
+    # QB resources compatibility
+    - action: download_github
+    dest: ./resources/[standalone]/interact-sound
+    ref: master
+    src: https://github.com/plunkettscott/interact-sound
+
+    - action: download_github
+    dest: ./resources/[standalone]/PolyZone
+    ref: master
+    src: https://github.com/mkafrin/PolyZone
+
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
