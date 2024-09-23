@@ -139,6 +139,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_core.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_core/qbx_core.sql
 
   - action: download_file
     path: ./tmp/qbx_management.zip
@@ -146,6 +148,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_management/qbx_management.sql
 
   - action: download_file
     path: ./tmp/qbx_diving.zip
@@ -207,6 +211,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_vehicles.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
   - action: download_file
     path: ./tmp/qbx_garages.zip

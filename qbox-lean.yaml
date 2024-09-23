@@ -145,6 +145,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_core.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_core/qbx_core.sql
 
   - action: download_file
     path: ./tmp/qbx_vehicles.zip
@@ -152,6 +154,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_vehicles.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
@@ -170,6 +174,8 @@ tasks:
     dest: ./resources/[qbx]/qbx_vehicleshop
     ref: main
     src: https://github.com/qbox-project/qbx_vehicleshop
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicleshop/vehshop.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_hud
@@ -187,6 +193,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_management/qbx_management.sql
 
   - action: download_file
     path: ./tmp/qbx_garages.zip
