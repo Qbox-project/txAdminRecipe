@@ -139,6 +139,17 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_core.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_core/qbx_core.sql
+
+  - action: download_file
+    path: ./tmp/qbx_vehicles.zip
+    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_vehicles.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
   - action: download_file
     path: ./tmp/qbx_management.zip
@@ -146,6 +157,8 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_management/qbx_management.sql
 
   - action: download_file
     path: ./tmp/qbx_diving.zip
@@ -200,13 +213,6 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/vehiclehandler.zip
-
-  - action: download_file
-    path: ./tmp/qbx_vehicles.zip
-    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_vehicles.zip
 
   - action: download_file
     path: ./tmp/qbx_garages.zip

@@ -163,6 +163,17 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_core.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_core/qbx_core.sql
+
+  - action: download_file
+    path: ./tmp/qbx_vehicles.zip
+    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_vehicles.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
@@ -181,11 +192,15 @@ tasks:
     dest: ./resources/[qbx]/qbx_vehiclesales
     ref: main
     src: https://github.com/qbox-project/qbx_vehiclesales
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehiclesales/qb-vehiclesales.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehicleshop
     ref: main
     src: https://github.com/qbox-project/qbx_vehicleshop
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicleshop/vehshop.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_houserobbery
@@ -208,16 +223,22 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_management.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_management/qbx_management.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
     ref: main
     src: https://github.com/qbox-project/qbx_weed
+  - action: query_database
+    file: ./resources/[qbx]/qbx_weed/sql/qbx_weed.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_lapraces
     ref: main
     src: https://github.com/qbox-project/qbx_lapraces
+  - action: query_database
+    file: ./resources/[qbx]/qbx_lapraces/qb-lapraces.sql
 
   - action: download_file
     path: ./tmp/qbx_garages.zip
@@ -379,6 +400,8 @@ tasks:
     dest: ./resources/[qbx]/qbx_drugs
     ref: main
     src: https://github.com/qbox-project/qbx_drugs
+  - action: query_database
+    file: ./resources/[qbx]/qbx_drugs/qbx_drugs.sql
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -404,13 +427,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_fireworks
     ref: main
     src: https://github.com/Qbox-project/qbx_fireworks
-
-  - action: download_file
-    path: ./tmp/qbx_vehicles.zip
-    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_vehicles.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_density
