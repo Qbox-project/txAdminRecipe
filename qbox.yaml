@@ -166,6 +166,15 @@ tasks:
   - action: query_database
     file: ./resources/[qbx]/qbx_core/qbx_core.sql
 
+  - action: download_file
+    path: ./tmp/qbx_vehicles.zip
+    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_vehicles.zip
+  - action: query_database
+    file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
+
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
     ref: main
@@ -418,15 +427,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_fireworks
     ref: main
     src: https://github.com/Qbox-project/qbx_fireworks
-
-  - action: download_file
-    path: ./tmp/qbx_vehicles.zip
-    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_vehicles.zip
-  - action: query_database
-    file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_density
