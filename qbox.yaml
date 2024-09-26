@@ -231,7 +231,7 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_weed
   - action: query_database
-    file: ./resources/[qbx]/qbx_weed/qbx_weed.sql
+    file: ./resources/[qbx]/qbx_weed/sql/qbx_weed.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_lapraces
