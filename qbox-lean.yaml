@@ -271,6 +271,20 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_cityhall
 
+  - action: download_file
+    path: ./tmp/qbx_spawn.zip
+    url: https://github.com/qbox-project/qbx_spawn/releases/latest/download/qbx_spawn.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_spawn.zip
+
+  - action: download_file
+    path: ./tmp/qbx_customs.zip
+    url: https://github.com/qbox-project/qbx_customs/releases/latest/download/qbx_customs.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_customs.zip
+
   - action: waste_time # prevent github throttling
     seconds: 10
 

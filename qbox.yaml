@@ -433,6 +433,13 @@ tasks:
     ref: main
     src: https://github.com/Qbox-project/qbx_density
 
+  - action: download_file
+    path: ./tmp/qbx_customs.zip
+    url: https://github.com/qbox-project/qbx_customs/releases/latest/download/qbx_customs.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_customs.zip
+
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
