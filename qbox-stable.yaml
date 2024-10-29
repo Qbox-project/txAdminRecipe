@@ -25,6 +25,10 @@ tasks:
     dest: ./ox.cfg
 
   - action: move_path
+    src: ./tmp/qbox/voice.cfg
+    dest: ./voice.cfg
+
+  - action: move_path
     src: ./tmp/qbox/myLogo.png
     dest: ./myLogo.png
 
