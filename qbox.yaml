@@ -184,10 +184,12 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_scoreboard
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_adminmenu
-    ref: main
-    src: https://github.com/qbox-project/qbx_adminmenu
+  - action: download_file
+    path: ./tmp/qbx_adminmenu.zip
+    url: https://github.com/qbox-project/qbx_adminmenu/releases/latest/download/qbx_adminmenu.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_adminmenu.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -211,10 +213,12 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_houserobbery
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_hud
-    ref: main
-    src: https://github.com/qbox-project/qbx_hud
+  - action: download_file
+    path: ./tmp/qbx_hud.zip
+    url: https://github.com/qbox-project/qbx_hud/releases/latest/download/qbx_hud.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_hud.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_seatbelt
@@ -314,10 +318,12 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_storerobbery
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_spawn
-    ref: main
-    src: https://github.com/qbox-project/qbx_spawn
+  - action: download_file
+    path: ./tmp/qbx_spawn.zip
+    url: https://github.com/qbox-project/qbx_spawn/releases/latest/download/qbx_spawn.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_spawn.zip
 
   - action: download_file
     path: ./tmp/qbx_smallresources.zip
@@ -436,6 +442,13 @@ tasks:
     dest: ./resources/[qbx]/qbx_density
     ref: main
     src: https://github.com/Qbox-project/qbx_density
+
+  - action: download_file
+    path: ./tmp/qbx_customs.zip
+    url: https://github.com/qbox-project/qbx_customs/releases/latest/download/qbx_customs.zip
+  - action: unzip
+    dest: ./resources/[qbx]
+    src: ./tmp/qbx_customs.zip
 
   # OX
   - action: download_file
