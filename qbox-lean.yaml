@@ -332,6 +332,11 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
 
+  - action: move_path
+    src: ./tmp/qbox/items.lua
+    dest: ./resources/[ox]/ox_inventory/data/items.lua
+    overwrite: true
+
   - action: download_github
     dest: ./resources/[ox]/ox_fuel
     ref: v1.4.0
