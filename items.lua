@@ -116,10 +116,38 @@ return {
         }
     },
 
-    ['lockpick'] = {
-        label = 'Lockpick',
-        weight = 160,
-    },
+	['lockpick'] = {
+		name = 'lockpick',
+		label = 'Lockpick',
+		weight = 50,
+		type = 'item',
+		image = 'lockpick.png',
+		unique = false,
+		useable = true,
+		shouldClose = true,
+		combinable = nil,
+		description = 'For picking locks',
+		client = {
+			event = 'lockpicks:UseLockpick',
+			args = false -- for regular lockpick
+		}
+	},
+	['advancedlockpick'] = {
+		name = 'advancedlockpick', 
+		label = 'Advanced Lockpick',
+		weight = 150,
+		type = 'item',
+		image = 'advancedlockpick.png',
+		unique = false,
+		useable = true,
+		shouldClose = true,
+		combinable = nil,
+		description = 'For picking more secure locks',
+		client = {
+			event = 'lockpicks:UseLockpick',
+			args = true -- for advanced lockpick
+		}
+	},
 
     ['phone'] = {
         label = 'Phone',
