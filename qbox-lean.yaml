@@ -2,7 +2,7 @@ $engine: 3
 $onesync: on
 name: Qbox Lean Pack
 version: 1.0.0
-author: Manason
+author: The Community
 description: A stripped down version of Qbox without excess resources. Does not include any criminal or civilian activities.
 
 tasks:

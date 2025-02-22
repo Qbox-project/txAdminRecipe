@@ -2,7 +2,7 @@ $engine: 3
 $onesync: on
 name: Qbox Stable
 version: 1.0.0
-author: Manason
+author: The Community
 description: Only includes stable, released resources. Recommend for those who want a working server out of the box. However some popular resources may be missing.
 
 tasks:
