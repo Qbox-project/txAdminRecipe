@@ -419,12 +419,15 @@ tasks:
     ref: main
     src: https://github.com/Qbox-project/qbx_density
 
-  - action: download_file
-    path: ./tmp/qbx_customs.zip
-    url: https://github.com/qbox-project/qbx_customs/releases/latest/download/qbx_customs.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_customs.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_customs
+    ref: main
+    src: https://github.com/Qbox-project/qbx_customs
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_chat_theme
+    ref: main
+    src: https://github.com/Qbox-project/qbx_chat_theme
 
   # OX
   - action: download_file
