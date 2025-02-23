@@ -526,6 +526,16 @@ tasks:
     dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
 
+  - action: move_path
+    src: ./tmp/qbox/items/items.lua
+    dest: ./resources/[ox]/ox_inventory/data/items.lua
+    overwrite: true
+
+  - action: move_path
+    src: ./tmp/qbox/items/images
+    dest: ./resources/[ox]/ox_inventory/web/images/
+    overwrite: true
+
   # Clean up
   - action: remove_path
     path: ./tmp
