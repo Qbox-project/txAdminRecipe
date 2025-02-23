@@ -66,6 +66,13 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/screencapture.zip
 
+  - action: download_file
+    path: ./tmp/screenshot-basic.zip
+    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  - action: unzip
+    dest: ./resources/[standalone]/screenshot-basic
+    src: ./tmp/screenshot-basic.zip
+
   - action: download_github
     dest: ./resources/[standalone]/mhacking
     ref: main
@@ -103,6 +110,11 @@ tasks:
     ref: main
     src: https://github.com/BaziForYou/MugShotBase64
     subpath: MugShotBase64
+
+  - action: download_github
+    dest: ./resources/[standalone]/informational
+    ref: main
+    src: https://github.com/Qbox-project/informational
 
   - action: download_file
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/README.md
