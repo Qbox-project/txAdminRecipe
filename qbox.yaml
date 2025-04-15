@@ -489,6 +489,16 @@ tasks:
     overwrite: true
 
   - action: download_github
+    dest: ./tmp/qbox/
+    ref: main
+    src: https://github.com/Qbox-project/qbx_invimages
+
+  - action: move_path
+    src: ./tmp/qbox/images
+    dest: ./resources/[ox]/ox_inventory/web/images
+    overwrite: true
+
+  - action: download_github
     dest: ./resources/[ox]/ox_fuel
     ref: main
     src: https://github.com/overextended/ox_fuel
