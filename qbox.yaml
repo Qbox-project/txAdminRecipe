@@ -407,9 +407,6 @@ tasks:
   - action: query_database
     file: ./resources/[qbx]/qbx_drugs/qbx_drugs.sql
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
   - action: download_github
     dest: ./resources/[qbx]/qbx_idcard
     ref: main
@@ -444,6 +441,9 @@ tasks:
     dest: ./resources/[qbx]/qbx_chat_theme
     ref: main
     src: https://github.com/Qbox-project/qbx_chat_theme
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   # OX
   - action: download_file
@@ -525,6 +525,11 @@ tasks:
   - action: unzip
     dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
+
+  - action: download_github
+    dest: ./resources/[assets]/pillbox
+    ref: main
+    src: https://github.com/Lorenc95/pillbox
 
   # Clean up
   - action: remove_path
