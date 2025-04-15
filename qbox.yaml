@@ -169,10 +169,12 @@ tasks:
     ref: main
     src: https://github.com/AvarianKnight/pma-voice
 
-  - action: download_github
-    dest: ./resources/[voice]/qbx_radio
-    ref: main
-    src: https://github.com/qbox-project/qbx_radio
+  - action: download_file
+    path: ./tmp/mm_radio.zip
+    url: https://github.com/qbox-project/mm_radio/releases/latest/download/mm_radio.zip
+  - action: unzip
+    dest: ./resources/[voice]
+    src: ./tmp/mm_radio.zip
 
   # Downloading Qbox resources
   - action: download_github
