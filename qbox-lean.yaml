@@ -39,7 +39,7 @@ tasks:
 
   # STANDALONE
   - action: download_github
-    src: https://github.com/citizenfx/cfx-server-data
+    src: https://github.com/bitpredator/cfx-server-data
     subpath: resources
     dest: ./resources/[cfx-default]
   - action: remove_path
@@ -299,35 +299,35 @@ tasks:
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
-    url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
+    url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
 
   - action: download_file
     path: ./tmp/ox_target.zip
-    url: https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
+    url: https://github.com/communityox/ox_target/releases/latest/download/ox_target.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_target.zip
 
   - action: download_file
     path: ./tmp/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    url: https://github.com/communityox/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/oxmysql.zip
 
   - action: download_file
     path: ./tmp/ox_doorlock.zip
-    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
+    url: https://github.com/communityox/ox_doorlock/releases/latest/download/ox_doorlock.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
-    url: https://github.com/overextended/ox_inventory/releases/latest/download/ox_inventory.zip
+    url: https://github.com/communityox/ox_inventory/releases/latest/download/ox_inventory.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
@@ -340,7 +340,7 @@ tasks:
   - action: download_github
     dest: ./resources/[ox]/ox_fuel
     ref: main
-    src: https://github.com/overextended/ox_fuel
+    src: https://github.com/communityox/ox_fuel
 
     # NPWD
   - action: download_file
