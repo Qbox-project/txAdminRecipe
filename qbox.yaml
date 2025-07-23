@@ -209,7 +209,7 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_vehiclesales
   - action: query_database
-    file: ./resources/[qbx]/qbx_vehiclesales/qb-vehiclesales.sql
+    file: ./resources/[qbx]/qbx_vehiclesales/qbx-vehiclesales.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehicleshop
@@ -252,7 +252,7 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_lapraces
   - action: query_database
-    file: ./resources/[qbx]/qbx_lapraces/qb-lapraces.sql
+    file: ./resources/[qbx]/qbx_lapraces/qbx-lapraces.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_garages
