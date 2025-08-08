@@ -75,7 +75,11 @@ tasks:
     dest: ./resources/[standalone]/scully_emotemenu
     ref: main
     src: https://github.com/Scullyy/scully_emotemenu
-
+    
+  - action: download_github
+    dest: ./resources/[standalone]/7_popmanager
+    ref: main
+    src: https://github.com/squarerootof49/7_popmanager
   - action: download_github
     dest: ./resources/[standalone]/ultra-voltlab
     ref: main
@@ -233,13 +237,6 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_smallresources.zip
-
-  - action: download_file
-    path: ./tmp/qbx_density.zip
-    url: https://github.com/Qbox-project/qbx_density/releases/latest/download/qbx_density.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_density.zip
 
   - action: download_file
     path: ./tmp/qbx_adminmenu.zip
