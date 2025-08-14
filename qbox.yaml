@@ -124,6 +124,11 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
 
+  - action: download_github
+    dest: ./resources/[standalone]/7_popmanager
+    ref: main
+    src: https://github.com/squarerootof49/7_popmanager
+
   - action: download_file
     path: ./tmp/xt-prison.zip
     url: https://github.com/xT-Development/xt-prison/releases/latest/download/xt-prison.zip
@@ -421,11 +426,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_fireworks
     ref: main
     src: https://github.com/Qbox-project/qbx_fireworks
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_density
-    ref: main
-    src: https://github.com/Qbox-project/qbx_density
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_customs
