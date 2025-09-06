@@ -318,12 +318,10 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_spawn
 
-  - action: download_file
-    path: ./tmp/qbx_smallresources.zip
-    url: https://github.com/qbox-project/qbx_smallresources/releases/latest/download/qbx_smallresources.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_smallresources.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_smallresources
+    ref: main
+    src: https://github.com/qbox-project/qbx_smallresources
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_recyclejob
