@@ -230,8 +230,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_management
     ref: main
     src: https://github.com/qbox-project/qbx_management
-  - action: query_database
-    file: ./resources/[qbx]/qbx_management/qbx_management.sql
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
