@@ -464,7 +464,7 @@ return {
         weight = 100,
     },
 
-    ['aluminium'] = {
+    ['aluminum'] = {
         label = 'Aluminium',
         weight = 100,
     },
