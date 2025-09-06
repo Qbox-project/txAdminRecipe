@@ -29,6 +29,10 @@ tasks:
     dest: ./voice.cfg
 
   - action: move_path
+    src: ./tmp/qbox/misc.cfg
+    dest: ./misc.cfg
+
+  - action: move_path
     src: ./tmp/qbox/myLogo.png
     dest: ./myLogo.png
 
@@ -56,11 +60,11 @@ tasks:
     src: https://github.com/qbox-project/safecracker
 
   - action: download_file
-    path: ./tmp/screenshot-basic.zip
-    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+    path: ./tmp/screencapture.zip
+    url: https://github.com/itschip/screencapture/releases/latest/download/screencapture.zip
   - action: unzip
-    dest: ./resources/[standalone]/screenshot-basic
-    src: ./tmp/screenshot-basic.zip
+    dest: ./resources/[standalone]
+    src: ./tmp/screencapture.zip
 
   - action: download_github
     dest: ./resources/[standalone]/mhacking
@@ -99,6 +103,11 @@ tasks:
     ref: main
     src: https://github.com/BaziForYou/MugShotBase64
     subpath: MugShotBase64
+
+  - action: download_github
+    dest: ./resources/[standalone]/informational
+    ref: main
+    src: https://github.com/Qbox-project/informational
 
   - action: download_file
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/README.md
@@ -153,27 +162,25 @@ tasks:
     ref: main
     src: https://github.com/AvarianKnight/pma-voice
 
-  - action: download_github
-    dest: ./resources/[voice]/qbx_radio
-    ref: main
-    src: https://github.com/qbox-project/qbx_radio
+  - action: download_file
+    path: ./tmp/mm_radio.zip
+    url: https://github.com/qbox-project/mm_radio/releases/latest/download/mm_radio.zip
+  - action: unzip
+    dest: ./resources/[voice]
+    src: ./tmp/mm_radio.zip
 
   # Downloading Qbox resources
-  - action: download_file
-    path: ./tmp/qbx_core.zip
-    url: https://github.com/qbox-project/qbx_core/releases/latest/download/qbx_core.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_core.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_core
+    ref: main
+    src: https://github.com/qbox-project/qbx_core
   - action: query_database
     file: ./resources/[qbx]/qbx_core/qbx_core.sql
 
-  - action: download_file
-    path: ./tmp/qbx_vehicles.zip
-    url: https://github.com/qbox-project/qbx_vehicles/releases/latest/download/qbx_vehicles.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_vehicles.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_vehicles
+    ref: main
+    src: https://github.com/qbox-project/qbx_vehicles
   - action: query_database
     file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
@@ -182,12 +189,10 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_scoreboard
 
-  - action: download_file
-    path: ./tmp/qbx_adminmenu.zip
-    url: https://github.com/qbox-project/qbx_adminmenu/releases/latest/download/qbx_adminmenu.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_adminmenu.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_adminmenu
+    ref: main
+    src: https://github.com/qbox-project/qbx_adminmenu
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -211,24 +216,20 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_houserobbery
 
-  - action: download_file
-    path: ./tmp/qbx_hud.zip
-    url: https://github.com/qbox-project/qbx_hud/releases/latest/download/qbx_hud.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_hud.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_hud
+    ref: main
+    src: https://github.com/qbox-project/qbx_hud
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_seatbelt
     ref: main
     src: https://github.com/qbox-project/qbx_seatbelt
 
-  - action: download_file
-    path: ./tmp/qbx_management.zip
-    url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_management.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_management
+    ref: main
+    src: https://github.com/qbox-project/qbx_management
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
@@ -244,12 +245,10 @@ tasks:
   - action: query_database
     file: ./resources/[qbx]/qbx_lapraces/qb-lapraces.sql
 
-  - action: download_file
-    path: ./tmp/qbx_garages.zip
-    url: https://github.com/qbox-project/qbx_garages/releases/latest/download/qbx_garages.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_garages.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_garages
+    ref: main
+    src: https://github.com/qbox-project/qbx_garages
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_ambulancejob
@@ -314,12 +313,10 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_storerobbery
 
-  - action: download_file
-    path: ./tmp/qbx_spawn.zip
-    url: https://github.com/qbox-project/qbx_spawn/releases/latest/download/qbx_spawn.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_spawn.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_spawn
+    ref: main
+    src: https://github.com/qbox-project/qbx_spawn
 
   - action: download_file
     path: ./tmp/qbx_smallresources.zip
@@ -333,31 +330,25 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_recyclejob
 
-  - action: download_file
-    path: ./tmp/qbx_diving.zip
-    url: https://github.com/qbox-project/qbx_diving/releases/latest/download/qbx_diving.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_diving.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_diving
+    ref: main
+    src: https://github.com/qbox-project/qbx_diving
 
-  - action: download_file
-    path: ./tmp/qbx_divegear.zip
-    url: https://github.com/qbox-project/qbx_divegear/releases/latest/download/qbx_divegear.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_divegear.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_divegear
+    ref: main
+    src: https://github.com/qbox-project/qbx_divegear
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_cityhall
     ref: main
     src: https://github.com/qbox-project/qbx_cityhall
 
-  - action: download_file
-    path: ./tmp/qbx_truckrobbery.zip
-    url: https://github.com/qbox-project/qbx_truckrobbery/releases/latest/download/qbx_truckrobbery.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_truckrobbery.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_truckrobbery
+    ref: main
+    src: https://github.com/qbox-project/qbx_truckrobbery
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_pawnshop
@@ -409,20 +400,15 @@ tasks:
   - action: query_database
     file: ./resources/[qbx]/qbx_drugs/qbx_drugs.sql
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
   - action: download_github
     dest: ./resources/[qbx]/qbx_idcard
     ref: main
     src: https://github.com/Qbox-project/qbx_idcard
 
-  - action: download_file
-    path: ./tmp/qbx_binoculars.zip
-    url: https://github.com/Qbox-project/qbx_binoculars/releases/latest/download/qbx_binoculars.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_binoculars.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_binoculars
+    ref: main
+    src: https://github.com/Qbox-project/qbx_binoculars
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_carwash
@@ -434,52 +420,56 @@ tasks:
     ref: main
     src: https://github.com/Qbox-project/qbx_fireworks
 
-  - action: download_file
-    path: ./tmp/qbx_density.zip
-    url: https://github.com/Qbox-project/qbx_density/releases/latest/download/qbx_density.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_density.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_density
+    ref: main
+    src: https://github.com/Qbox-project/qbx_density
 
-  - action: download_file
-    path: ./tmp/qbx_customs.zip
-    url: https://github.com/qbox-project/qbx_customs/releases/latest/download/qbx_customs.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_customs.zip
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_customs
+    ref: main
+    src: https://github.com/Qbox-project/qbx_customs
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_chat_theme
+    ref: main
+    src: https://github.com/Qbox-project/qbx_chat_theme
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
-    url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
+    url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
 
   - action: download_file
     path: ./tmp/ox_target.zip
-    url: https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
+    url: https://github.com/communityox/ox_target/releases/latest/download/ox_target.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_target.zip
 
   - action: download_file
     path: ./tmp/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    url: https://github.com/communityox/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/oxmysql.zip
 
   - action: download_file
     path: ./tmp/ox_doorlock.zip
-    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
+    url: https://github.com/communityox/ox_doorlock/releases/latest/download/ox_doorlock.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
-    url: https://github.com/overextended/ox_inventory/releases/latest/download/ox_inventory.zip
+    url: https://github.com/communityox/ox_inventory/releases/latest/download/ox_inventory.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
@@ -490,14 +480,24 @@ tasks:
     overwrite: true
 
   - action: download_github
+    dest: ./tmp/qbox/
+    ref: main
+    src: https://github.com/Qbox-project/qbx_invimages
+
+  - action: move_path
+    src: ./tmp/qbox/images
+    dest: ./resources/[ox]/ox_inventory/web/images
+    overwrite: true
+
+  - action: download_github
     dest: ./resources/[ox]/ox_fuel
     ref: main
-    src: https://github.com/overextended/ox_fuel
+    src: https://github.com/communityox/ox_fuel
 
     # NPWD
   - action: download_file
     path: ./tmp/npwd.zip
-    url: https://github.com/project-error/npwd/releases/download/3.14.3/npwd.zip
+    url: https://github.com/project-error/npwd/releases/download/3.16.0/npwd.zip
   - action: unzip
     dest: ./resources/[npwd]/
     src: ./tmp/npwd.zip
@@ -528,6 +528,11 @@ tasks:
   - action: unzip
     dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
+
+  - action: download_github
+    dest: ./resources/[assets]/pillbox
+    ref: main
+    src: https://github.com/Lorenc95/pillbox
 
   # Clean up
   - action: remove_path

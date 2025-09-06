@@ -2,7 +2,7 @@ $engine: 3
 $onesync: on
 name: Qbox Stable
 version: 1.0.0
-author: Manason
+author: The Community
 description: Only includes stable, released resources. Recommend for those who want a working server out of the box. However some popular resources may be missing.
 
 tasks:
@@ -27,6 +27,10 @@ tasks:
   - action: move_path
     src: ./tmp/qbox/voice.cfg
     dest: ./voice.cfg
+
+  - action: move_path
+    src: ./tmp/qbox/misc.cfg
+    dest: ./misc.cfg
 
   - action: move_path
     src: ./tmp/qbox/myLogo.png
@@ -56,11 +60,11 @@ tasks:
     src: https://github.com/qbox-project/safecracker
 
   - action: download_file
-    path: ./tmp/screenshot-basic.zip
-    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+    path: ./tmp/screencapture.zip
+    url: https://github.com/itschip/screencapture/releases/latest/download/screencapture.zip
   - action: unzip
-    dest: ./resources/[standalone]/screenshot-basic
-    src: ./tmp/screenshot-basic.zip
+    dest: ./resources/[standalone]/
+    src: ./tmp/screencapture.zip
 
   - action: download_github
     dest: ./resources/[standalone]/mhacking
@@ -268,35 +272,35 @@ tasks:
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
-    url: https://github.com/overextended/ox_lib/releases/latest/download/ox_lib.zip
+    url: https://github.com/communityox/ox_lib/releases/latest/download/ox_lib.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
 
   - action: download_file
     path: ./tmp/ox_target.zip
-    url: https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
+    url: https://github.com/communityox/ox_target/releases/latest/download/ox_target.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_target.zip
 
   - action: download_file
     path: ./tmp/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    url: https://github.com/communityox/oxmysql/releases/latest/download/oxmysql.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/oxmysql.zip
 
   - action: download_file
     path: ./tmp/ox_doorlock.zip
-    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
+    url: https://github.com/communityox/ox_doorlock/releases/latest/download/ox_doorlock.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
 
   - action: download_file
     path: ./tmp/ox_inventory.zip
-    url: https://github.com/overextended/ox_inventory/releases/latest/download/ox_inventory.zip
+    url: https://github.com/communityox/ox_inventory/releases/latest/download/ox_inventory.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
@@ -309,7 +313,7 @@ tasks:
   - action: download_github
     dest: ./resources/[ox]/ox_fuel
     ref: main
-    src: https://github.com/overextended/ox_fuel
+    src: https://github.com/communityox/ox_fuel
 
     # NPWD
   - action: download_file
