@@ -104,11 +104,6 @@ tasks:
     src: https://github.com/BaziForYou/MugShotBase64
     subpath: MugShotBase64
 
-  - action: download_github
-    dest: ./resources/[standalone]/informational
-    ref: main
-    src: https://github.com/Qbox-project/informational
-
   - action: download_file
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/README.md
     path: ./resources/[standalone]/MugShotBase64/README.md
