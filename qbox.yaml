@@ -71,9 +71,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/mhacking
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
   - action: download_github
     dest: ./resources/[standalone]/scully_emotemenu
     ref: main
@@ -189,9 +186,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_adminmenu
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehiclesales
     ref: main
@@ -254,9 +248,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_medical
     ref: main
     src: https://github.com/qbox-project/qbx_medical
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_radialmenu
@@ -368,9 +359,6 @@ tasks:
     ref: main
     src: https://github.com/qbox-project/qbx_jewelery
 
-  - action: waste_time # prevent github throttling
-    seconds: 10
-
   - action: download_github
     dest: ./resources/[qbx]/qbx_bankrobbery
     ref: main
@@ -392,6 +380,9 @@ tasks:
     src: https://github.com/qbox-project/qbx_drugs
   - action: query_database
     file: ./resources/[qbx]/qbx_drugs/qbx_drugs.sql
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_idcard
@@ -427,9 +418,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_chat_theme
     ref: main
     src: https://github.com/Qbox-project/qbx_chat_theme
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
   # OX
   - action: download_file
