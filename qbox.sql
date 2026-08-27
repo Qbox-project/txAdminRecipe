@@ -12,6 +12,10 @@ CREATE TABLE IF NOT EXISTS `player_mails` (
   KEY `citizenid` (`citizenid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+ALTER TABLE `players`
+ADD COLUMN`last_logged_out` timestamp NULL DEFAULT NULL AFTER `last_updated`,
+MODIFY COLUMN `name` varchar(255) NOT NULL COLLATE utf8mb4_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS `playerskins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(255) NOT NULL,
