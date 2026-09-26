@@ -264,8 +264,13 @@ return {
         weight = 4000,
     },
 
-    ['diamond_ring'] = {
+    ['diamond'] = {
         label = 'Diamond',
+        weight = 1500,
+    },
+
+    ['diamond_ring'] = {
+        label = 'Diamond Ring',
         weight = 1500,
     },
 
@@ -281,6 +286,11 @@ return {
 
     ['goldchain'] = {
         label = 'Golden Chain',
+        weight = 1500,
+    },
+
+    ['10kgoldchain'] = {
+        label = '10k Gold Chain',
         weight = 1500,
     },
 
